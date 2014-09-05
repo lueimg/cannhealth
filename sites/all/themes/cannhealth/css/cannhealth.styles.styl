@@ -4,11 +4,121 @@
 color_red = #E62D2B
 color_green = #148E24
 
+color_main_menu = #515151
+color_home_title =  #e62c2a
+color_description = #888888 // texto debajo
+color_title_green = #518c30
+color_footer = #fff
+color_footer_link = #afafaf
+color_footer_background = #4E4E4E
+//tamanos
+size_base = 14px // 16px
+size_main_menu = 1.05em
+size_home_title = 3.7em
+size_description = 1.6em  // 26px 20pt
+size_title_green = 1.6em
+size_title_down = 1.4em   // 22px 16pt
+size_footer_title = 1.5em // 24px 18pt
+size_footer_link = 1.2em  // 19px 14pt
+//Titulos verdes: 20pt  #518c30
+//Texto debajo: 16pt  #888888
+//footer
+//Titulos: 18pt  #FFFFFF
+//Links: 14pt  #afafaf
+
+//fonts 
+// @font-face {
+// 	font-family: open;
+// 	src:url('fonts/opensans.ttf');
+// }
+
+// @font-face {
+// 	font-family: fuente45chato;
+// 	src:url('fonts/helr45w.ttf');
+// }
+// @font-face {
+// 	font-family: 'fuente47largo';
+// 	src:url(fonts/helr47w.ttf);
+// }
+// @font-face {
+// 	font-family: 'fuente48italica';
+// 	src:url(fonts/helr48w.ttf);
+// }
+// @font-face {
+// 	font-family: fuente65boldchato;
+// 	src:url(fonts/helr65w.ttf);
+// }
+// @font-face {
+// 	font-family: 'fuente66bolditalica';
+// 	src:url(fonts/helr66w.ttf);
+// }
+// @font-face {
+// 	font-family: 'fuente67boldlargo';
+// 	src:url(fonts/helr67w.ttf);
+// }
+// @font-face {
+// 	font-family: 'fuente68boldlargoitalica';
+// 	src:url(fonts/helr68w.ttf);
+// }
+// @font-face {
+// 	font-family: 'fuente-largo-small';
+// 	src:url(fonts/HELVETI3.TTF);
+// }
+
+
 .breadcrumb
 	display none
 
-body.front
-	background url('../images/background.jpg') repeat center center color_green
+
+.block-home
+	&.column
+		width 250px
+		display inline-block
+		text-align left
+		margin-right 50px
+	.block__title
+		color color_green
+		font-size:  size_title_green
+		text-transform uppercase
+	&.products
+		h2
+			text-align left
+		.views-row
+			display inline-block
+			height 230px
+			border 1px solid color_red
+			margin-right 45px
+			&.views-row-last
+				margin-right 0
+			.views-field-title
+				a
+					color color_green
+					text-transform uppercase
+					text-decoration none 
+					font-weight  bold
+			.views-field-field-thc-level
+			.views-field-field-cbd-level
+				span
+				div
+					display inline-block
+			.views-field-view-node
+				a
+					padding 10px
+					display inline-block
+					background color_green
+					text-transform uppercase
+					color #fff
+					text-decoration none
+					margin 10px
+					font-size: 0.8em
+
+body
+	font-size: size_base 
+	font-family: 'helvetica'
+	color color_description
+	&.front
+		background url('../images/background.jpg') repeat center center color_green
+		
 
 
 .cann-general-page-client-register-form
@@ -33,11 +143,30 @@ body.front
 
 
 
+.footer-wrap
+	background color_footer_background
+	.block__title
+		text-transform uppercase
+		font-weight: normal
+		padding 10px 30px
+		border-bottom 1px solid #ccc
+
+	.l-footer
+		.block
+			display inline-block
+			vertical-align top
+			width 180px
+			a
+				color #fff
+	#block-superfish-1--2
+		li
+			display block
+			border none
+			width 100%
+			margin 0
 
 
 
-h1
-	color color_green
 
 .front
 	h1
@@ -69,6 +198,28 @@ h1
 					background color_green
 
 
+h1
+	color color_green
+
+
+//menu principal
+.m-menu
+	li
+		font-size: size_main_menu
+		text-transform uppercase
+		padding 0 10px
+		margin 25px 0
+		border-left 1px solid #ccc
+		&.last
+			border-right 1px solid #ccc
+		a
+			color color_main_menu
+			text-decoration none
+			&:hover
+				color color_red
+
+
+//liston de color rojo o verde
 .navigation_text
 	background color_red
 	color #fff
@@ -81,36 +232,57 @@ h1
 		max-width: 1190px;
 		text-transform: uppercase;
 
+//escondemos el titulo del bloque menu principal del header
+.l-header
+	h2
+		display none
+
+//bloque de informacion de registro de usuarios
 .register-info
 	float right
 	border-radius 5px
 	border 1px solid color_red
 	padding 20px
 
-.site-client
-	.user-type.top
-		display inline-block
-		width 160px
-		height 35px
-		margin-top 25px
-	.navigation_text
-		background color_redx
-	.m-menu
-		li
-			text-transform uppercase
-			padding 0 10px
-			margin 25px 0
-			border-left 1px solid #ccc
-			&.last
-				border-right 1px solid #ccc
 
-		
+.site-client
+	.navigation_text
+		background color_red
+
+
 
 .site-distributor
 	.navigation_text
 		background color_green
 
 
+.sub-home
+	h1
+		color color_title_green
+		font-size: size_home_title
+		text-align center
+		margin-bottom 10px
+	.l-content
+		text-align center
+
+.user-type.top
+		display inline-block
+		width 160px
+		height 35px
+		margin-top 25px
+		color color_title_green
+		a
+			color color_red
+
+.welcome-text
+	text-align center
+	a
+		padding 10px
+		display inline-block
+		background color_red
+		text-transform uppercase
+		color #fff
+		text-decoration none
 
 
 

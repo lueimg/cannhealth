@@ -26,7 +26,7 @@
       <file leaf-file-name="cann_general.module" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="26" selection-start="1890" selection-end="1890" vertical-scroll-proportion="-6.875" vertical-offset="915" max-vertical-offset="9645">
+            <state line="72" column="26" selection-start="1890" selection-end="1890" vertical-scroll-proportion="299.375" vertical-offset="8265" max-vertical-offset="9645">
               <folding>
                 <element signature="e#7#194#0" expanded="true" />
                 <marker date="1409931347000" expanded="true" signature="16122:16148" placeholder="..." />
@@ -40,7 +40,7 @@
       <file leaf-file-name="simple-layout.tpl.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/layouts/simple/simple-layout.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="35" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.7191781" vertical-offset="75" max-vertical-offset="1050">
+            <state line="63" column="6" selection-start="2210" selection-end="2210" vertical-scroll-proportion="0.8458904" vertical-offset="451" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
@@ -788,18 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="26" selection-start="1890" selection-end="1890" vertical-scroll-proportion="-6.875" vertical-offset="915" max-vertical-offset="9645">
-          <folding>
-            <element signature="e#7#194#0" expanded="true" />
-            <marker date="1409931347000" expanded="true" signature="16122:16148" placeholder="..." />
-            <marker date="1409931347000" expanded="true" signature="16122:16389" placeholder="..." />
-            <marker date="1409931347000" expanded="true" signature="16122:16215" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/omega.info">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="34" selection-start="670" selection-end="670" vertical-scroll-proportion="0.22624435" vertical-offset="0" max-vertical-offset="663">
@@ -821,9 +809,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="26" selection-start="1890" selection-end="1890" vertical-scroll-proportion="299.375" vertical-offset="8265" max-vertical-offset="9645">
+          <folding>
+            <element signature="e#7#194#0" expanded="true" />
+            <marker date="1409931347000" expanded="true" signature="16122:16148" placeholder="..." />
+            <marker date="1409931347000" expanded="true" signature="16122:16389" placeholder="..." />
+            <marker date="1409931347000" expanded="true" signature="16122:16215" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/layouts/simple/simple-layout.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="35" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.7191781" vertical-offset="75" max-vertical-offset="1050">
+        <state line="63" column="6" selection-start="2210" selection-end="2210" vertical-scroll-proportion="0.8458904" vertical-offset="451" max-vertical-offset="1065">
           <folding />
         </state>
       </provider>
