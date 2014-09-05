@@ -1,0 +1,637 @@
+<?php
+
+/*
+ * For cannhealth , we have 2 enviroment
+ * distributor | users | and one extra visitors
+ *
+ * if I arrive to website from external site , I see the website like a user normal
+ *
+ * */
+
+//VALIDATE AUTENTICATED USER AND USER TYPE SESSION
+
+define('DISTRIBUTOR', 'distributor');
+define('USER', 'client');
+define('FRONTPAGE_URL', 'home');
+
+function cann_general_permission()
+{
+    return array
+    (
+        'administer my panel manager' => array
+        (
+            'title' => t('Administer my panel manager'),
+            'description' => t('Perform administration tasks for my panel manager.'),
+        ),
+
+    );
+}
+
+function cann_general_init()
+{
+
+$url = $_GET['q'];
+    //cann_health_clean_session_type();
+
+    //NOTICE IF WE TRY TO ENTRY to home  and we've already choose one option
+    if( $url == 'home' && in_array($_SESSION['user_type'], [ USER , DISTRIBUTOR] ) ){
+        drupal_goto($_SESSION['user_type']);
+        exit();
+
+    }
+
+    // if I'm trying to entry by distributor or user url and this is not my session
+    //I will redirect to home or my selected section before
+    if( in_array($url , [ USER , DISTRIBUTOR] ) &&  $_SESSION['user_type'] != $url ){
+        drupal_goto('home');
+        exit();
+    }
+
+//    drupal_set_message(   $_SESSION['user_type']  . ' ('.$url.')' );
+
+}
+
+
+function cann_general_menu(){
+
+    // to clean the session
+    $items['clean_session'] = array(
+        'title' => 'CannHealth',
+        'page callback' => 'cann_general_page_clean_session_type',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+    //front page site
+    $items['home'] = array(
+        'title' => 'CannHealth',
+        'page callback' => 'cann_general_page_home',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    //redirect by session type
+    $items['register'] = array(
+        'title' => '',
+        'page callback' => 'cann_general_register_redirect',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    // marihuana users home page
+    $items[USER] = array(
+        'title' => 'Registered Medical Mariahuana Users ',
+        'page callback' => 'cann_general_page_home',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items[USER . '/register'] = array(
+        'title' => 'Register',
+        'page callback' => 'cann_general_page_client_register',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    //producers home page
+    $items['distributor'] = array(
+        'title' => 'Licenced Distributors',
+        'page callback' => 'cann_general_page_home',
+        'access callback' => 'cann_general_page_home_distributor_access',
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['distributor/register'] = array(
+        'title' => 'Distributors register',
+        'page callback' => 'cann_general_page_distributor_register',
+        'access callback' => 'cann_general_page_home_distributor_access',
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['panel'] = array(
+        'title' => 'My Panel Manager',
+        'page callback' => 'cann_general_page_panel_manager',
+        'access arguments' => array('administer my panel manager'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['panel/products'] = array(
+        'title' => 'Manage your Products',
+        'page callback' => 'cann_general_page_panel_product_list',
+        'access arguments' => array('administer my panel manager'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['panel/products/add'] = array(
+        'title' => 'Manage your Products CREATE',
+        'page callback' => 'cann_general_page_panel_product_add',
+        'access arguments' => array('administer my panel manager'),
+        'type' => MENU_CALLBACK,
+    );
+
+    //using in block http://cannhealth.dev/admin/structure/block/manage/block/1/configure
+    $items['define-type/%'] = array(
+        'title' => '',
+        'page callback' => 'cann_general_page_define_type',
+        'page arguments' => array(1),
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    return $items;
+
+}
+
+
+
+function cann_general_register_redirect(){
+
+    if(empty($_SESSION['user_type'])){
+        drupal_goto('home');
+    }else{
+        drupal_goto($_SESSION['user_type'].'/register');
+    }
+
+
+}
+
+
+function cann_general_page_home_distributor_access(){
+
+    if($_SESSION['user_type'] == DISTRIBUTOR ){
+        return true;
+    }else{
+        return false;
+    }
+
+}
+
+
+//CREATE ENVIROMENT OF THE FIRST PAGE
+//THIS PAGE IS FILLED WITH CUSTOM BLOCKS
+function cann_general_page_home(){
+    return '';
+}
+
+
+function cann_general_page_define_type($type){
+/*
+ * Exist 2 types : DISTRIBUTOS AND USER
+ * */
+
+   if(!$type){
+    drupal_goto('home');
+    exit();
+   }
+    $_SESSION['user_type'] = $type;
+
+    drupal_goto('home');
+
+    return '';
+}
+
+function cann_health_clean_session_type(){
+    unset($_SESSION['user_type']);
+}
+
+function cann_general_page_clean_session_type(){
+    cann_health_clean_session_type();
+    drupal_goto(FRONTPAGE_URL);
+}
+
+function cann_general_page_distributor_register(){
+
+    $tpl = '';
+    $tpl = @render(drupal_get_form('cann_general_page_distributor_register_form'));
+
+
+    return $tpl;
+}
+
+function cann_general_page_distributor_register_form($node, &$form_state){
+
+
+    $form['producer_name'] = array(
+        '#type' => 'textfield',
+        '#title' => 'Licenced Producer Name',
+        '#default_value' =>'',
+        '#required' => TRUE,
+
+    );
+    $form['main_contact'] = array(
+        '#type' => 'textfield',
+        '#title' => 'Main Contact',
+        '#default_value' =>'',
+        '#required' => TRUE,
+
+    );
+
+    $form['website'] = array(
+        '#type' => 'textfield',
+        '#title' => 'Web Site',
+        '#default_value' =>'',
+        '#required' => TRUE,
+    );
+
+    $form['phone'] = array(
+        '#type' => 'textfield',
+        '#title' => 'Phone Number',
+        '#default_value' =>'',
+        '#required' => TRUE,
+    );
+
+    $form['fax'] = array(
+        '#type' => 'textfield',
+        '#title' => 'Fax Number',
+        '#default_value' =>'',
+        '#required' => TRUE,
+    );
+
+    $form['address'] = array(
+        '#type' => 'textfield',
+        '#title' => 'Adress',
+        '#default_value' =>'',
+        '#required' => TRUE,
+    );
+
+    $form['mail'] = [
+        '#type' => 'textfield',
+        '#title' => 'Email Address',
+        '#default_value' =>'',
+        '#required' => TRUE,
+    ];
+
+    $form['upload'] = array(
+        '#type' => 'file',
+        '#title' => 'Upload Licenced Document',
+    );
+
+    $form['#attributes'] = ['enctype' => "multipart/form-data"];
+
+    $form['submit'] = array('#type' => 'submit', '#value' => t('REGISTER') );
+
+    return $form;
+
+}
+
+function cann_general_page_distributor_register_form_submit($form, &$form_state) {
+
+    $roles = array(2 => true, 4 => true);
+
+    $new_user = array(
+        'name' => $form_state['values']['producer_name'],
+        'pass' => user_password(),
+        'mail' => $form_state['values']['mail'],
+        'init' => $form_state['values']['mail'],
+        'field_dist_licenced' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['producer_name']))),
+        'field_dist_main_contact' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['main_contact']))),
+        'field_dist_website' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['website']))),
+        'field_phone_number' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['phone']))),
+        'field_dist_fax_number' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['fax']))),
+        'field_adress' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['address']))),
+        'field_dist_upload_licenced' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['upload']))),
+        'status' => 0,
+        'access' => REQUEST_TIME,
+        'roles' => $roles,
+    );
+// $account returns user object
+    $account = user_save(null, $new_user);
+
+    //NOTIFICATION TO ADMINISTRATORS
+    //NOTIFICATION TO CLIENT.
+}
+
+
+
+function cann_general_form_alter(&$form, $form_state, $form_id)
+{
+
+    if (in_array($form_id, array('user_login', 'user_login_block')))
+    {
+        $field_extra['code_id'] = array(
+            '#type' => 'textfield',
+            '#title' => 'Code ID',
+            '#default_value' =>'',
+            '#required' => TRUE,
+            '#attributes' => array('tabindex' => 1),
+            '#weight'=>-10
+        );
+
+        $form = $form + $field_extra;
+
+        array_unshift($form['#validate'], 'cann_general_form_user_login_validate');
+
+    }
+//    var_dump($form);
+
+}
+
+function cann_general_form_user_login_validate(&$form, $form_state)
+{
+//    dpm($form_state);
+//    drupal_set_message('cann_general_form_user_login_validate() called', 'status');
+
+    $user = user_load_by_name($form_state['values']['name']);
+
+    if(!$user)
+    {
+        form_set_error('name', "User doesn't exist! ");
+    }
+    elseif($user->name == 'admin')
+    {
+        // pass
+    }
+    else
+    {
+        if($user->field_code_id['und'][0]['value'] != $form_state['values']['code_id'])
+        {
+            form_set_error('code_id', "Code ID is wrong or not exist");
+        }
+    }
+
+}
+
+function cann_general_user_login(&$edit,$account)
+{
+//    drupal_set_message('cann general user login');
+//    dpm($account);
+//    dpm($edit);
+
+    $roles = $account->roles;
+    if($roles['4'])
+    {
+        $_SESSION['user_type'] = DISTRIBUTOR;
+    }
+    elseif($roles['5'])
+    {
+        $_SESSION['user_type'] = USER;
+    }
+
+}
+
+
+function cann_general_user_logout($account)
+{
+//    drupal_set_message('cann general user logout');
+//    dpm($account);
+    cann_health_clean_session_type();
+
+
+}
+
+
+function cann_general_page_panel_manager()
+{
+    return "";
+
+}
+
+// list of products by autenticated users
+function cann_general_page_panel_product_list()
+{
+    $tpl = '';
+    $tpl .= "<h2>Manage your products</h2>";
+    $tpl .= "<div class='actions-link'><a href='/panel/products/delete-multiple'>Delete</a><a href='/panel/products/add'>New Product</a></div>";
+
+    $tpl .= render(drupal_get_form('cann_general_page_panel_product_list_form'));
+
+
+    return $tpl;
+}
+
+
+function cann_general_page_panel_product_list_form($node, &$form_state)
+{
+    $limit = 10;
+    global $user;
+
+    $header = array(
+        array('data' => t('ID'), ), // sort
+        array('data' => t('Product Name'), ),
+        array('data' => t('Action')),
+        array('data' => t('Edit'), ),
+    );
+
+    //query
+    $query = db_select('node', 'n');
+
+    $query->fields('n',['nid','title','status'] );
+    // $query->addExpression("CONCAT(g.code, '-', g.id)", 'codefull');
+    $query->condition('n.uid', $user->uid , '=');
+
+    $table_sort = $query->extend('TableSort') // Add table sort extender.
+        ->orderByHeader($header); // Add order by headers.
+
+
+    $pager = $table_sort->extend('PagerDefault')
+        ->limit($limit); // 5 rows per page.
+
+    $result = $pager->execute();
+
+    $rows = array();
+    foreach($result as $res){
+
+        switch ($res->status) {
+            case '0':
+                $status_label = "not publishd";
+                break;
+            case '1':
+                $status_label = "Published";
+                break;
+        }
+
+
+
+
+        $rows[$res->nid] = array(
+            $res->nid,
+            $res->title,
+            $status_label,
+            "<a href='/panel/product/".$res->nid . "/edit' >Edit item</a>",
+            );
+
+    }
+
+
+    $form['table'] = array(
+        '#type' => 'tableselect',
+        '#header' => $header,
+        '#options' => $rows,
+        '#empty' => t('Table has no row!')
+    );
+
+    $form['pager'] = array('#markup' => theme('pager'));
+
+    return $form;
+
+
+}
+
+
+//page when you can create new products
+function cann_general_page_panel_product_add()
+{
+    global $user;
+    $block = array();
+    module_load_include('inc', 'node', 'node.pages');
+    $node = (object) array(
+        'uid' => $user->uid,
+        'name' => (isset($user->name) ? $user->name : ''),
+        'type' => 'product',
+        'language' => LANGUAGE_NONE,
+        'ajax_form' => '1');
+
+    $form = drupal_get_form('product' . '_node_form', $node);
+    $page = render($form);
+
+    return $page;
+}
+
+
+
+function cann_general_page_client_register()
+{
+    $tpl = '';
+    $tpl = @render(drupal_get_form('cann_general_page_client_register_form'));
+
+
+    return $tpl;
+}
+
+function cann_general_page_client_register_form($node, &$form_state){
+
+
+    $form['first_name'] = array(
+        '#type' => 'textfield',
+        '#title' => 'Fist Name',
+        '#default_value' =>'',
+        '#required' => TRUE,
+
+    );
+    $form['last_name'] = array(
+        '#type' => 'textfield',
+        '#title' => 'Last Name',
+        '#default_value' =>'',
+        '#required' => TRUE,
+
+    );
+
+
+
+    $form['phone'] = array(
+        '#type' => 'textfield',
+        '#title' => 'Phone Number',
+        '#default_value' =>'',
+        '#required' => TRUE,
+    );
+
+
+
+    $form['address'] = array(
+        '#type' => 'textfield',
+        '#title' => 'Adress',
+        '#default_value' =>'',
+        '#required' => TRUE,
+    );
+
+    $form['mail'] = [
+        '#type' => 'textfield',
+        '#title' => 'Email Address',
+        '#default_value' =>'',
+        '#required' => TRUE,
+    ];
+
+
+    $form['submit'] = array('#type' => 'submit', '#value' => t('REGISTER') );
+
+    return $form;
+
+}
+
+function cann_general_page_client_register_form_submit($form, &$form_state) {
+
+    $roles = array(2 => true, 5 => true);
+
+    $new_user = array(
+        'name' => $form_state['values']['first_name'],
+        'pass' => user_password(),
+        'mail' => $form_state['values']['mail'],
+        'init' => $form_state['values']['mail'],
+        'field_first_name' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['first_name']))),
+        'field_last_name' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['last_name']))),
+        'field_phone_number' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['phone']))),
+        'field_adress' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['address']))),
+        'status' => 0,
+        'access' => REQUEST_TIME,
+        'roles' => $roles,
+    );
+// $account returns user object
+    $account = user_save(null, $new_user);
+
+    //NOTIFICATION TO ADMINISTRATORS
+    //NOTIFICATION TO CLIENT.
+}
+
+
+function cann_general_block_info() {
+
+    $blocks['user_type'] = array(
+        'info' => t('User type'),
+    );
+
+    $blocks['user_type_home'] = array(
+        'info' => t('User type home'),
+    );
+
+    $blocks['user_navigation'] = array(
+        'info' => t('User type navigation'),
+    );
+
+
+    return $blocks;
+}
+
+function cann_general_block_view($delta='') {
+    $block = array();
+    switch ($delta) {
+        case 'user_type':
+            $block['subject'] = t('User type top');
+            $block['content'] = cann_general_block_user_type_content();
+            break;
+        case 'user_type_home':
+            $block['subject'] = t('User type Home');
+            $block['content'] = cann_general_block_user_type_home_content();
+            break;
+        case 'user_navigation':
+            $block['subject'] = t('User type navigation');
+            $block['content'] = cann_general_block_user_navigation_content();
+            break;
+    }
+    return $block;
+}
+
+function cann_general_block_user_type_content(){
+    $block = '';
+    if(empty($_SESSION['user_type']) || $_SESSION['user_type']== USER )
+        $block = "<span>Are you a Licenced Distributor? <a href='/define-type/".DISTRIBUTOR."'>Click Here</a></span>";
+    else
+        $block = "<span>Are you a Marihuana Medical User? <a href='/define-type/".USER."'>Click Here</a></span>";
+    return $block;
+}
+function cann_general_block_user_type_home_content()
+{
+    $block = "
+    <div class='logo'></div>
+    <div class='user_type'>
+        <div class='type first'> Licenced<br>Producer/Distributors<br><a href='/define-type/".DISTRIBUTOR."'>Click Here</a></div>
+        <div class='type last'> Registered Medical<br>Marihuana Users<br><a href='/define-type/".USER."'>Click Here</a></div>
+    </div>
+    ";
+    return $block;
+}
+function cann_general_block_user_navigation_content()
+{
+    $info = drupal_get_title();
+    return $info;
+}
+
+

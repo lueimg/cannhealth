@@ -1,0 +1,5 @@
+name = Cann general
+description = "Funcionalidades generales en el site de cannhealth"
+package = CANNHEALTH
+core = 7.x
+files[] = cann_general.module

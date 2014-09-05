@@ -1,0 +1,34 @@
+name = cannhealth
+description = Please provide a description for your theme.
+base theme = omega
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+stylesheets[all][] = css/cannhealth.normalize.css
+stylesheets[all][] = css/cannhealth.hacks.css
+stylesheets[all][] = css/cannhealth.styles.css
+stylesheets[all][] = css/cannhealth.no-query.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/cannhealth.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[branding] = Branding
+regions[header] = Header
+regions[navigation] = Navigation
+regions[slider] = Slider
+regions[navigation_text]= Navigation text
+regions[highlighted] = Highlighted
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer] = Footer
