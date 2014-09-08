@@ -26,6 +26,9 @@ size_footer_link = 1.2em  // 19px 14pt
 //Titulos: 18pt  #FFFFFF
 //Links: 14pt  #afafaf
 
+width_total = 960px
+
+
 //fonts 
 // @font-face {
 // 	font-family: open;
@@ -33,8 +36,8 @@ size_footer_link = 1.2em  // 19px 14pt
 // }
 
 // @font-face {
-// 	font-family: fuente45chato;
-// 	src:url('fonts/helr45w.ttf');
+// 	font-family: fuentechato;
+// 	src:url('fonts/helveticachato.ttf');
 // }
 // @font-face {
 // 	font-family: 'fuente47largo';
@@ -120,7 +123,7 @@ body
 		background url('../images/background.jpg') repeat center center color_green
 		
 
-
+.cann-general-page-distributor-register-form
 .cann-general-page-client-register-form
 	label
 		font-weight normal
@@ -131,15 +134,46 @@ body
 		border-radius 5px
 		border 1px solid #ccc
 		margin-top 10px
-	#edit-submit
-		background 
+	#edit-submit 
 		width 145px
 		line-height 1.5em
 		color #fff
 		border-radius 0px
 		border none
-		margin-left 250px
-		background url('../images/check_register.png') no-repeat 6px 6px color_green
+		margin 10px auto
+		background url('../images/check_register.png') no-repeat 10px center color_green
+
+
+.cann-general-page-distributor-register-form
+	width 90%
+	text-align center
+	.form-item
+		width auto
+		text-align left
+	#edit-submit
+		background-color color_red
+		
+
+
+.footer_pre
+	background color_red
+	padding 30px 0 25px 0
+	overflow hidden
+	.l-region
+		width width_total
+		margin 0 auto
+		color #fff
+		p
+			margin 0
+		a
+			background color_green
+			float right
+			text-transform uppercase
+			padding 8px 20px 8px 50px
+			color #fff
+			text-decoration none
+			background url('../images/icon_register.png') no-repeat 17px center color_green
+
 
 
 
@@ -150,12 +184,14 @@ body
 		font-weight: normal
 		padding 10px 30px
 		border-bottom 1px solid #ccc
+		margin-bottom 0
 
 	.l-footer
 		.block
 			display inline-block
 			vertical-align top
 			width 180px
+			margin 0 30px
 			a
 				color #fff
 	#block-superfish-1--2
@@ -164,6 +200,10 @@ body
 			border none
 			width 100%
 			margin 0
+			padding 0
+			a
+				border-bottom 1px dotted #ccc
+				padding 5px 15px
 
 
 
@@ -202,6 +242,21 @@ h1
 	color color_green
 
 
+//escondemos el titulo del bloque menu principal del header
+.l-header
+	h2
+		display none
+
+//borde rojo superior
+.l-page 
+	border-top 1px solid color_red
+
+
+.link-register
+	color color_red
+	font-weight: normal
+	text-decoration none
+
 //menu principal
 .m-menu
 	li
@@ -229,13 +284,123 @@ h1
 		font-size: 1.3em;
 		line-height: 3.5em;
 		margin: 0 auto;
-		max-width: 1190px;
+		max-width: width_total;
 		text-transform: uppercase;
+		position relative
+		.sub-text
+			left: 0;
+			padding-left: 30px;
+			position: absolute;
+			text-transform: none;
+			top: 24px;
+			background url("../images/check_register.png") no-repeat left center transparent
 
-//escondemos el titulo del bloque menu principal del header
-.l-header
-	h2
+.node--product
+	&.view-mode-full
+		margin-top 40px
+		.field
+			margin-left 465px
+			
+		.field--name-field-image
+			float left
+			margin-right 25px
+			margin-left 0
+		.field--name-title
+			color color_red
+			text-transform capitalize
+		.field--name-field-thc-level
+		.field--name-field-cbd-level
+		.field--name-field-taste
+			.field__label
+			.field__items
+				display inline-block
+		.field--name-field-licenced
+			margin 25px 0
+		.field--name-field-conditions
+				margin-bottom 25px
+			.field__label
+				font-weight: bold
+		.field--name-field-price
+			.field__item
+				color color_green
+				font-weight: bold
+				font-size 2em
+				margin 10px 0
+				&:before
+					content "$"
+					display inline-block
+
+
+
+//esconde el titulo por defecto
+.node-type-product
+	h1
 		display none
+
+
+.product-filter
+	.block__title
+		color color_red
+		text-transform uppercase
+	.views-exposed-widget
+		width 300px
+		#edit-field-conditions-tid
+		#edit-uid
+		#edit-combine
+			width 100%
+			border 1px solid #d2d2d2
+			padding 10px
+		#edit-submit-products
+			background color_green
+			color #fff
+			text-transform uppercase
+			padding 10px
+			float right
+			border none
+
+
+.page-products
+	h1
+		display none
+	.views-row
+		clear both
+		border 1px solid color_red
+		overflow hidden
+		margin-bottom 25px
+		background #EDF2EB
+		.views-field-field-image
+			float left
+			margin-right 15px
+		.views-field-title
+			display block
+			a
+				color color_title_green
+				display inline-block
+				text-transform capitalize
+				margin 20px 0 10px 0px
+				text-decoration none
+				font-size: 1.2em
+		.views-field-field-thc-level
+		.views-field-field-cbd-level
+		.views-field-field-taste
+			display inline-block
+			min-width 95px
+			.views-label
+				font-weight bold
+		.views-field-view-node
+			display block
+			text-align right
+			a
+				color #fff
+				background color_red
+				text-transform uppercase
+				display inline-block
+				padding 8px
+				text-decoration none
+
+
+
+
 
 //bloque de informacion de registro de usuarios
 .register-info
@@ -249,11 +414,23 @@ h1
 	.navigation_text
 		background color_red
 
-
-
 .site-distributor
+	&.sub-home
+		h1
+			color color_red
 	.navigation_text
 		background color_green
+	.block-home.products 
+		.views-row 
+			.views-field-view-node 
+				a
+					background color_red
+	.user-login 
+		#edit-submit
+			background-color color_red
+
+
+
 
 
 .sub-home
@@ -265,12 +442,37 @@ h1
 	.l-content
 		text-align center
 
+
+
+.user-login
+	.form-text
+		padding 10px 
+		border 1px solid #ccc
+		border-radius 5px
+		width 300px
+	#edit-submit
+		background url('../images/icon_login.png') no-repeat 15px center color_green
+		padding 10px 20px 10px 40px
+		border none
+		color #fff
+	.description
+		display none
+
+	
+
 .user-type.top
+	span
 		display inline-block
-		width 160px
+		width 250px
 		height 35px
 		margin-top 25px
 		color color_title_green
+		padding-left 35px
+		&.distributor
+			background url('../images/ico-distribuidor.png') no-repeat left center transparent	
+		&.client
+			background url('../images/ico-usuario.png') no-repeat left center transparent	
+			
 		a
 			color color_red
 

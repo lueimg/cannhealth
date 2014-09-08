@@ -46,7 +46,13 @@
       // processed previously. By using .once('foo') all processed elements will
       // get tagged with a 'foo-processed' class, causing all future invocations
       // of this behavior to ignore them.
+
+        $(".form-item:even").css('float','left');
+        $(".form-item:odd").css('float','right');
+        console.log("ejecutado")
       $('.some-selector', context).once('foo', function () {
+
+
         // Now, we are invoking the previously declared theme function using two
         // settings as arguments.
         var $anchor = Drupal.theme('cannhealthExampleButton', settings.myExampleLinkPath, settings.myExampleLinkTitle);
@@ -56,5 +62,7 @@
       });
     }
   };
+
+
 
 })(jQuery);
