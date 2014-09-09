@@ -182,6 +182,66 @@ h1 {
 .l-header h2 {
   display: none;
 }
+.l-header ul#superfish-2 {
+  margin-bottom: 0;
+}
+.l-header ul#superfish-2 li:hover ul,
+.l-header ul#superfish-2 li.sfHover ul {
+  top: 2em;
+}
+.l-header .panel-manager {
+  display: inline-block;
+  width: auto;
+  margin-bottom: 0;
+}
+.l-header .panel-manager #menu-458-2,
+.l-header .panel-manager #menu-458-2:hover {
+  background: #528d33;
+  text-transform: uppercase;
+}
+.l-header .panel-manager #menu-458-2 a,
+.l-header .panel-manager #menu-458-2:hover a,
+.l-header .panel-manager #menu-458-2 a:hover,
+.l-header .panel-manager #menu-458-2:hover a:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #528d33;
+  padding: 5px;
+}
+.l-header .panel-manager li li a {
+  background: #8fb007 !important;
+  padding: 5px;
+  text-transform: none;
+}
+.l-main .l-region--sidebar-first .block__title {
+  display: none;
+}
+.l-main .l-region--sidebar-first .panel #dhtml_menu-458 > a {
+  display: block;
+  background: #528d33;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 5px;
+  font-style: normal;
+}
+.l-main .l-region--sidebar-first .panel #dhtml_menu-458 ul {
+  padding: 0;
+}
+.l-main .l-region--sidebar-first .panel #dhtml_menu-458 ul li {
+  list-style: none;
+}
+.l-main .l-region--sidebar-first .panel #dhtml_menu-458 ul li a {
+  display: block;
+  color: #148e24;
+  text-decoration: none;
+  border-bottom: 1px dotted #148e24;
+  padding: 5px 15px;
+}
+.l-main .l-region--sidebar-first .panel #dhtml_menu-458 ul li a:hover,
+.l-main .l-region--sidebar-first .panel #dhtml_menu-458 ul li a.active-trail {
+  background: #dce1ca;
+}
 .l-page {
   border-top: 1px solid #e62d2b;
 }
@@ -344,12 +404,105 @@ max-height
   padding: 8px;
   text-decoration: none;
 }
+.page-panel-products .form-text {
+  width: 100%;
+  border: 1px solid #e62d2b;
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.page-panel-products .field-name-field-conditions {
+  margin: 20px 0;
+}
+.page-panel-products .field-name-field-cbd-level,
+.page-panel-products .field-name-field-thc-level,
+.page-panel-products .field-name-field-taste,
+.page-panel-products .field-name-field-price {
+  width: 33%;
+  display: inline-block;
+  padding-right: 20px;
+}
+.page-panel-products .field-name-field-taste {
+  padding-right: 0;
+}
+.page-panel-products .field-name-field-image {
+  display: inline-block;
+  width: auto;
+}
+.page-panel-products .form-actions #edit-preview {
+  display: none;
+}
+.page-panel-products .form-actions input {
+  background: url("../images/icon_save.png") no-repeat 10px center #e62d2b;
+  color: #fff;
+  padding: 8px 30px 8px 40px;
+  border: none;
+}
 .register-info {
   float: right;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #e62d2b;
   padding: 20px;
+}
+.section-panel h1 {
+  color: #e62d2b;
+  list-style: circle;
+  display: list-item;
+  font-size: 1.5em;
+  margin-left: 20px;
+  list-style-type: disc;
+}
+.section-panel .actions-link a {
+  display: inline-block;
+  line-height: 3em;
+  background: #e62d2b;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  padding: 0 20px 0 30px;
+  background: url("../images/icon_eliminar.png") no-repeat 10px center #e62d2b;
+}
+.section-panel .actions-link a.delete {
+  background-color: transparent;
+  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  color: #111;
+}
+.section-panel .actions-link a.add {
+  background-image: url("../images/icon_new.png");
+  -webkit-border-radius: 0px 5px 5px 0px;
+  border-radius: 0px 5px 5px 0px;
+  color: #fff;
+}
+.section-panel table {
+  width: 100%;
+}
+.section-panel table tr {
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+}
+.section-panel table th,
+.section-panel table td {
+  padding: 10px;
+  background: transparent;
+}
+.section-panel table th {
+  background: #edf2eb;
+  color: #111;
+  font-weight: normal;
+}
+.section-panel table .action-link {
+  padding: 5px 5px 5px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #111;
+}
+.section-panel table .action-link:hover {
+  background: #dce1ca;
 }
 .site-client .navigation_text {
   background: #e62d2b;
@@ -390,6 +543,21 @@ max-height
 }
 .user-login .description {
   display: none;
+}
+.user_name {
+  clear: both;
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 1.8em;
+  vertical-align: top;
+}
+.user_name .label {
+  color: #e62d2b;
+}
+.user_name .name {
+  color: #148e24;
+  padding: 0px 10px;
+  display: inline-block;
 }
 .user-type.top span {
   display: inline-block;

@@ -122,12 +122,25 @@ function cann_general_menu(){
     );
 
     $items['panel/products/add'] = array(
-        'title' => 'Manage your Products CREATE',
+        'title' => 'Manage your Products',
         'page callback' => 'cann_general_page_panel_product_add',
         'access arguments' => array('administer my panel manager'),
         'type' => MENU_CALLBACK,
     );
-
+    $items['panel/products/%/edit'] = array(
+        'title' => 'Edit your Products',
+        'page callback' => 'cann_general_page_panel_product_edit',
+        'page arguments' => array(2),
+        'access arguments' => array('administer my panel manager'),
+        'type' => MENU_CALLBACK,
+    );
+    $items['panel/products/%/publish'] = array(
+        'title' => '',
+        'page callback' => 'cann_general_page_panel_product_edit_status',
+        'page arguments' => array(2),
+        'access arguments' => array('administer my panel manager'),
+        'type' => MENU_CALLBACK,
+    );
     //using in block http://cannhealth.dev/admin/structure/block/manage/block/1/configure
     $items['define-type/%'] = array(
         'title' => '',
@@ -266,17 +279,53 @@ function cann_general_page_distributor_register_form($node, &$form_state){
     );
 
     $form['#attributes'] = ['enctype' => "multipart/form-data"];
-
+    $form['#validate'][] = 'cann_general_page_distributor_register_form_validate';
     $form['submit'] = array('#type' => 'submit', '#value' => t('REGISTER') );
 
     return $form;
 
 }
 
+function cann_general_page_distributor_register_form_validate(&$form, &$form_state)
+{
+    //VALIDANDO SUBIR FILE
+    $file = file_save_upload('upload', array());
+    // If the file passed validation:
+    if ($file) {
+        // Move the file into the Drupal file system.
+        if ($file = file_move($file, 'public://'.date("Y/m/d"))) {
+            // Save the file for use in the submit handler.
+            $form_state['storage']['file'] = $file;
+        }
+        else {
+            form_set_error('file', t("Failed to write the uploaded file to the site's file folder."));
+        }
+    }
+    else {
+        form_set_error('file', t('No file was uploaded.'));
+    }
+
+
+}
+
+
 function cann_general_page_distributor_register_form_submit($form, &$form_state) {
 
-    $roles = array(2 => true, 4 => true);
 
+    //VALIDANDO FILE SUBIDO PERMANTENE
+    $file = $form_state['storage']['file'];
+    // We are done with the file, remove it from storage.
+    unset($form_state['storage']['file']);
+    // Make the storage of the file permanent.
+    $file->status = FILE_STATUS_PERMANENT;
+    // Save file status.
+    file_save($file);
+//    dpm($file);
+    $file->display = 1;
+    $file->description = "";
+
+
+    $roles = array(2 => true, 4 => true);
     $new_user = array(
         'name' => $form_state['values']['producer_name'],
         'pass' => user_password(),
@@ -288,7 +337,7 @@ function cann_general_page_distributor_register_form_submit($form, &$form_state)
         'field_phone_number' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['phone']))),
         'field_dist_fax_number' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['fax']))),
         'field_adress' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['address']))),
-        'field_dist_upload_licenced' => array(LANGUAGE_NONE => array(array('value' => $form_state['values']['upload']))),
+        'field_dist_upload_licenced' => array(LANGUAGE_NONE => array( (array)$file )),
         'status' => 0,
         'access' => REQUEST_TIME,
         'roles' => $roles,
@@ -298,6 +347,16 @@ function cann_general_page_distributor_register_form_submit($form, &$form_state)
 
     //NOTIFICATION TO ADMINISTRATORS
     //NOTIFICATION TO CLIENT.
+
+//    dpm($account);
+    //VALIDANDO ERRORES
+    //YA EXISTE EMAIL DE USUARIO
+
+
+
+    //Redireccion
+    drupal_goto("home");
+    drupal_set_message("Thank you for registering");
 }
 
 
@@ -389,8 +448,8 @@ function cann_general_page_panel_manager()
 function cann_general_page_panel_product_list()
 {
     $tpl = '';
-    $tpl .= "<h2>Manage your products</h2>";
-    $tpl .= "<div class='actions-link'><a href='/panel/products/delete-multiple'>Delete</a><a href='/panel/products/add'>New Product</a></div>";
+//    $tpl .= "<h2>Manage your products</h2>";
+    $tpl .= "<div class='actions-link'><a class='delete' href='/panel/products/delete-multiple'>Delete</a><a class='add' href='/panel/products/add'>New Product</a></div>";
 
     $tpl .= render(drupal_get_form('cann_general_page_panel_product_list_form'));
 
@@ -432,7 +491,7 @@ function cann_general_page_panel_product_list_form($node, &$form_state)
 
         switch ($res->status) {
             case '0':
-                $status_label = "not publishd";
+                $status_label = "Not Published";
                 break;
             case '1':
                 $status_label = "Published";
@@ -445,8 +504,8 @@ function cann_general_page_panel_product_list_form($node, &$form_state)
         $rows[$res->nid] = array(
             $res->nid,
             $res->title,
-            $status_label,
-            "<a href='/panel/product/".$res->nid . "/edit' >Edit item</a>",
+            "<a class='action-link $status_label' href='/panel/products/".$res->nid . "/publish' >".$status_label."</a>",
+            "<a class='action-link edit' href='/panel/products/".$res->nid . "/edit' >Edit item</a>",
             );
 
     }
@@ -486,7 +545,26 @@ function cann_general_page_panel_product_add()
     return $page;
 }
 
+function cann_general_page_panel_product_edit($nid)
+{
+    $producto = node_load($nid);
+    module_load_include('inc', 'node', 'node.pages');
+    $form = drupal_get_form('product' . '_node_form', $producto);
+    $page = render($form);
 
+    return $page;
+
+}
+
+function cann_general_page_panel_product_edit_status($nid)
+{
+
+    $producto = node_load($nid);
+    $producto->status = !$producto->status;
+    node_save($producto);
+
+    drupal_goto("panel/products");
+}
 
 function cann_general_page_client_register()
 {
@@ -586,6 +664,9 @@ function cann_general_block_info() {
         'info' => t('User type navigation'),
     );
 
+    $blocks['user_name'] = array(
+        'info' => t('User name'),
+    );
 
     return $blocks;
 }
@@ -605,7 +686,20 @@ function cann_general_block_view($delta='') {
             $block['subject'] = t('User type navigation');
             $block['content'] = cann_general_block_user_navigation_content();
             break;
+        case 'user_name':
+            $block['subject'] = t('User name');
+            $block['content'] = cann_general_block_user_name_content();
+            break;
     }
+    return $block;
+}
+
+function cann_general_block_user_name_content()
+{
+    global $user;
+//    dpm($user);
+    $block = "<div class='user_name'><span class='label'>User:</span><span class='name'>".$user->name."</span></div> ";
+
     return $block;
 }
 

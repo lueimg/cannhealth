@@ -11,6 +11,11 @@ color_title_green = #518c30
 color_footer = #fff
 color_footer_link = #afafaf
 color_footer_background = #4E4E4E
+
+color_verde_oscuro_menu = #528D33
+color_verde_clar_menu = #8FB007
+
+
 //tamanos
 size_base = 14px // 16px
 size_main_menu = 1.05em
@@ -246,6 +251,62 @@ h1
 .l-header
 	h2
 		display none
+	ul#superfish-2
+		margin-bottom 0
+		li:hover 
+		li.sfHover
+			ul
+				top 2em
+	.panel-manager
+		display inline-block
+		width auto
+		margin-bottom 0
+		#menu-458-2
+		#menu-458-2:hover
+			background color_verde_oscuro_menu
+			text-transform uppercase
+			a
+			a:hover
+				color #fff
+				text-decoration none
+				background color_verde_oscuro_menu
+				padding 5px
+		li
+			li
+				a
+					background color_verde_clar_menu !important
+					padding 5px
+					text-transform none
+
+
+.l-main
+	.l-region--sidebar-first
+		.block__title
+			display none
+		.panel
+			#dhtml_menu-458
+				> a
+					display block
+					background color_verde_oscuro_menu
+					color #fff
+					text-decoration none 
+					text-transform uppercase
+					padding 5px 5px
+					font-style: normal
+				ul
+					padding 0 
+					li
+						list-style none
+						a
+							display block
+							color color_green
+							text-decoration none
+							border-bottom 1px dotted color_green
+							padding 5px 15px
+							&:hover
+							&.active-trail
+								background #DCE1CA
+
 
 //borde rojo superior
 .l-page 
@@ -400,6 +461,35 @@ h1
 
 
 
+.page-panel-products
+	.form-text
+		width 100%
+		border 1px solid color_red
+		padding 10px 
+		border-radius 5px
+	.field-name-field-conditions
+		margin 20px 0
+	.field-name-field-cbd-level
+	.field-name-field-thc-level
+	.field-name-field-taste
+	.field-name-field-price
+		width 33%
+		display inline-block
+		padding-right 20px
+	.field-name-field-taste
+		padding-right 0
+	.field-name-field-image
+		display inline-block
+		width auto
+	.form-actions
+		#edit-preview
+			display none
+		input
+			background url('../images/icon_save.png') no-repeat  10px center color_red
+			color #fff
+			padding 8px 30px 8px 40px
+			border none
+
 
 
 //bloque de informacion de registro de usuarios
@@ -408,6 +498,59 @@ h1
 	border-radius 5px
 	border 1px solid color_red
 	padding 20px
+
+
+.section-panel
+	h1
+		color color_red
+		list-style circle
+		display list-item
+		font-size: 1.5em
+		margin-left 20px
+		list-style-type: disc;
+	.actions-link
+		a
+			display inline-block
+			line-height 3em
+			background color_red
+			margin-bottom 30px
+			border 1px solid #ccc
+			text-decoration none
+			padding 0 20px 0 30px
+			background url('../images/icon_eliminar.png') no-repeat 10px center color_red
+			&.delete
+				background-color transparent
+				border-radius 5px 0 0 5px
+				color #111
+			&.add
+				background-image url("../images/icon_new.png")
+				border-radius 0px 5px 5px 0px
+				color #fff
+	table
+		width 100%
+		tr
+			background transparent
+			border-bottom 1px solid #ccc
+		th
+		td
+			padding 10px
+			background transparent
+		th
+			background #EDF2EB
+			color #111
+			font-weight: normal
+		.action-link
+			padding 5px 5px 5px 5px
+			display inline-block
+			border 1px solid #ccc
+			border-radius 3px
+			text-decoration none
+			color #111
+			&:hover
+				background #dce1ca
+			
+				
+				
 
 
 .site-client
@@ -459,6 +602,19 @@ h1
 		display none
 
 	
+.user_name
+	clear both
+	text-transform uppercase
+	display inline-block
+	line-height 1.8em
+	vertical-align top
+	.label
+		color color_red
+	.name
+		color color_green
+		padding 0px 10px
+		display inline-block
+
 
 .user-type.top
 	span
@@ -485,6 +641,8 @@ h1
 		text-transform uppercase
 		color #fff
 		text-decoration none
+
+
 
 
 
