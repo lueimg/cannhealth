@@ -26,10 +26,16 @@
       <file leaf-file-name="cann_general.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="493" column="38" selection-start="13231" selection-end="13231" vertical-scroll-proportion="0.18597063" vertical-offset="7191" max-vertical-offset="11370">
+            <state line="775" column="44" selection-start="20662" selection-end="20662" vertical-scroll-proportion="3.3881063" vertical-offset="9460" max-vertical-offset="13455">
               <folding>
-                <marker date="1410265330000" expanded="true" signature="18433:18627" placeholder="..." />
-                <marker date="1410265330000" expanded="true" signature="18516:18534" placeholder="..." />
+                <element signature="e#7#194#0" expanded="true" />
+                <marker date="1410274185000" expanded="true" signature="19948:20181" placeholder="..." />
+                <marker date="1410274185000" expanded="true" signature="20266:20367" placeholder="..." />
+                <marker date="1410274185000" expanded="true" signature="20291:20356" placeholder="..." />
+                <marker date="1410274185000" expanded="true" signature="20549:20696" placeholder="..." />
+                <marker date="1410274185000" expanded="true" signature="20877:21024" placeholder="..." />
+                <marker date="1410274185000" expanded="true" signature="21178:21372" placeholder="..." />
+                <marker date="1410274185000" expanded="true" signature="21261:21279" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -60,6 +66,7 @@
         <option value="$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js" />
         <option value="$PROJECT_DIR$/includes/menu.inc" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/sites/all/libraries/flexslider/jquery.flexslider.js" />
         <option value="$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module" />
       </list>
     </option>
@@ -377,7 +384,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="navigation404" />
+              <option name="myItemId" value="flexslider" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -399,15 +406,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="00custom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cann_general" />
+              <option name="myItemId" value="libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,6 +425,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="flexslider" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -532,16 +539,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/ajax.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="10" selection-start="12990" selection-end="12990" vertical-scroll-proportion="0.35466668" vertical-offset="3557" max-vertical-offset="18930" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/flexslider/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="3068" selection-end="3068" vertical-scroll-proportion="0.7986111" vertical-offset="795" max-vertical-offset="1725" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.info">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="29" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="150" />
@@ -835,12 +832,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/flexslider/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="12" selection-start="1103" selection-end="1103" vertical-scroll-proportion="-0.8552036" vertical-offset="1062" max-vertical-offset="1725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/libraries/flexslider/jquery.flexslider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="4" selection-start="132" selection-end="132" vertical-scroll-proportion="0.27149323" vertical-offset="0" max-vertical-offset="17535">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="493" column="38" selection-start="13231" selection-end="13231" vertical-scroll-proportion="0.18597063" vertical-offset="7191" max-vertical-offset="11370">
+        <state line="775" column="44" selection-start="20662" selection-end="20662" vertical-scroll-proportion="3.3881063" vertical-offset="9460" max-vertical-offset="13455">
           <folding>
-            <marker date="1410265330000" expanded="true" signature="18433:18627" placeholder="..." />
-            <marker date="1410265330000" expanded="true" signature="18516:18534" placeholder="..." />
+            <element signature="e#7#194#0" expanded="true" />
+            <marker date="1410274185000" expanded="true" signature="19948:20181" placeholder="..." />
+            <marker date="1410274185000" expanded="true" signature="20266:20367" placeholder="..." />
+            <marker date="1410274185000" expanded="true" signature="20291:20356" placeholder="..." />
+            <marker date="1410274185000" expanded="true" signature="20549:20696" placeholder="..." />
+            <marker date="1410274185000" expanded="true" signature="20877:21024" placeholder="..." />
+            <marker date="1410274185000" expanded="true" signature="21178:21372" placeholder="..." />
+            <marker date="1410274185000" expanded="true" signature="21261:21279" placeholder="..." />
           </folding>
         </state>
       </provider>

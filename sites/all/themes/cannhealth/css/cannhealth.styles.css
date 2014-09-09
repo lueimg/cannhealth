@@ -90,6 +90,59 @@ body.front {
 .cann-general-page-distributor-register-form #edit-submit {
   background-color: #e62d2b;
 }
+.checkout-top {
+  float: right;
+  background: url("../images/icons-shoppingcart.png") no-repeat 0px center transparent;
+  padding: 10px 40px 10px 50px;
+}
+.checkout-top .nitems {
+  color: #e62d2b;
+}
+.checkout-top .link a {
+  color: #148e24;
+  text-decoration: none;
+}
+.buy.sidebar {
+  background: url("../images/icons-shoppingcart2.png") no-repeat 40px center #f1f1f1;
+  width: 268px;
+  color: #111;
+  padding: 30px 40px 25px 100px;
+  margin-top: 35px;
+}
+.buy.sidebar .nitems,
+.buy.sidebar .link {
+  text-align: right;
+}
+.buy.sidebar .nitems a,
+.buy.sidebar .link a {
+  color: #111;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  background: #a8a8a8;
+  margin-top: 5px;
+  display: inline-block;
+  padding: 3px 5px;
+}
+.field--name-compra .remove a,
+.field--name-compra .go-checkout a,
+.field--name-compra .libre a {
+  display: inline-block;
+  background: #e62d2b;
+  color: #fff;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+.field--name-compra .go-checkout a {
+  background: #148e24;
+  vertical-align: bottom;
+  padding: 11px;
+}
+.field--name-compra .continue a {
+  float: right;
+  color: #e62d2b;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
 .footer_pre {
   background: #e62d2b;
   padding: 30px 0 25px 0;
@@ -339,7 +392,7 @@ max-height
   text-transform: uppercase;
 }
 .product-filter .views-exposed-widget {
-  width: 300px;
+  width: 268px;
 }
 .product-filter .views-exposed-widget #edit-field-conditions-tid,
 .product-filter .views-exposed-widget #edit-uid,

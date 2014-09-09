@@ -23,6 +23,11 @@ function cann_general_permission()
             'title' => t('Administer my panel manager'),
             'description' => t('Perform administration tasks for my panel manager.'),
         ),
+        'You can buy medical mariahuana' => array
+        (
+            'title' => t('You can buy mariahuana medical'),
+            'description' => t('You can buy mariahuana medical'),
+        ),
 
     );
 }
@@ -48,6 +53,7 @@ $url = $_GET['q'];
     }
 
 //    drupal_set_message(   $_SESSION['user_type']  . ' ('.$url.')' );
+    //dpm($_SESSION['buylist']);
 
 }
 
@@ -147,6 +153,23 @@ function cann_general_menu(){
         'page callback' => 'cann_general_page_define_type',
         'page arguments' => array(1),
         'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    //RUTAS PARA COMPRAS
+    $items['buy/add/%'] = array(
+        'title' => '',
+        'page callback' => 'cann_general_buy_add',
+        'page arguments' => array(2),
+        'access arguments' => array('You can buy medical mariahuana'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['buy/remove/%nid'] = array(
+        'title' => '',
+        'page callback' => 'cann_general_buy_remove',
+        'page arguments' => array(2),
+        'access arguments' => array('You can buy medical mariahuana'),
         'type' => MENU_CALLBACK,
     );
 
@@ -580,7 +603,7 @@ function cann_general_page_client_register_form($node, &$form_state){
 
     $form['first_name'] = array(
         '#type' => 'textfield',
-        '#title' => 'Fist Name',
+        '#title' => 'First Name',
         '#default_value' =>'',
         '#required' => TRUE,
 
@@ -590,10 +613,7 @@ function cann_general_page_client_register_form($node, &$form_state){
         '#title' => 'Last Name',
         '#default_value' =>'',
         '#required' => TRUE,
-
     );
-
-
 
     $form['phone'] = array(
         '#type' => 'textfield',
@@ -647,6 +667,9 @@ function cann_general_page_client_register_form_submit($form, &$form_state) {
 
     //NOTIFICATION TO ADMINISTRATORS
     //NOTIFICATION TO CLIENT.
+
+    drupal_goto("home");
+    drupal_set_message("Thank you for registering");
 }
 
 
@@ -666,6 +689,13 @@ function cann_general_block_info() {
 
     $blocks['user_name'] = array(
         'info' => t('User name'),
+    );
+
+    $blocks['chekcout_top'] = array(
+        'info' =>'checkout top',
+    );
+    $blocks['chekcout_sidebar'] = array(
+        'info' =>'checkout sidebar',
     );
 
     return $blocks;
@@ -690,7 +720,77 @@ function cann_general_block_view($delta='') {
             $block['subject'] = t('User name');
             $block['content'] = cann_general_block_user_name_content();
             break;
+        case 'chekcout_top':
+            $block['subject'] = t('checkout top');
+            $block['content'] = cann_general_block_checkout_top_content();
+            break;
+        case 'chekcout_sidebar':
+            $block['subject'] = t('checkout sidebar');
+            $block['content'] = cann_general_block_checkout_sidebar_content();
+            break;
     }
+    return $block;
+}
+
+//campo dentro del full producto
+function cann_general_field_boton_comprar(){
+
+
+    $nid = arg(1);
+
+    $html='';
+    $en_lista = cann_general_search_item_buy($nid);
+
+    if($en_lista)
+    {//si ya esta seleccionado
+        $html = "<div class='comprar-field'>
+    <span class='remove'><a href='/buy/remove/$nid'>Remove</a></span>
+    <span class='go-checkout'><a href='/checkout'>Go to Checkout</a></span>
+    <span class='continue'><a href='/products'>Continue shopping</a></span>
+    </div>";
+
+    }else
+    {//si no esta seleccionado
+    $html = "<div class='comprar-field'>
+    <span class='libre'>
+        <a href='/buy/add/$nid'>BUY THIS PRODUCT</a>
+    </span>
+    </div>";
+
+    }
+
+
+
+
+
+    return $html;
+}
+
+function cann_general_block_checkout_top_content()
+{
+
+    $items = cann_general_buy_items_cantidad();
+    $block = "
+    <div class='content top'>
+        <div class='nitems'>Your Items (<span>$items</span>)</div>
+        <div class='link'><a href='/checkout'>Reserve Now</a> </div>
+    </div>
+    ";
+
+    return $block;
+
+}
+
+function cann_general_block_checkout_sidebar_content()
+{
+    $items = cann_general_buy_items_cantidad();
+    $block = "
+    <div class='buy sidebar'>
+        <div class='nitems'>Your Items (<span>$items</span>)</div>
+        <div class='link'><a href='/checkout'>Reserve Now</a> </div>
+    </div>
+    ";
+
     return $block;
 }
 
@@ -756,4 +856,37 @@ function cann_general_preprocess_page(&$vars)
         drupal_set_title("Login or <a class='link-register' href='/register'>Register</a>",PASS_THROUGH);
     }
 
+}
+
+//devuelve si existe o no en la lista de compra
+function cann_general_search_item_buy($nid)
+{
+    if(in_array( $nid , $_SESSION['buylist'] ))
+        return true; //ya existe
+    else
+        return false; // no existe
+
+}
+
+function cann_general_buy_add($nid)
+{
+    $existe = cann_general_search_item_buy($nid);
+    if(!$existe)
+        $_SESSION['buylist'][$nid] = $nid;
+
+    drupal_goto('node/'.$nid);
+
+}
+
+function cann_general_buy_remove($nid)
+{
+
+    unset($_SESSION['buylist'][$nid]);
+    drupal_goto('node/'.$nid);
+
+}
+
+function cann_general_buy_items_cantidad()
+{
+    return count($_SESSION['buylist']);
 }
