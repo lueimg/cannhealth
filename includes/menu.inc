@@ -522,6 +522,7 @@ function menu_execute_active_handler($path = NULL, $deliver = TRUE) {
     }
     else {
       $page_callback_result = MENU_NOT_FOUND;
+
     }
   }
 

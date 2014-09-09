@@ -101,7 +101,7 @@ function cann_general_menu(){
     );
 
     $items['distributor/register'] = array(
-        'title' => 'Distributors register',
+        'title' => 'Register',
         'page callback' => 'cann_general_page_distributor_register',
         'access callback' => 'cann_general_page_home_distributor_access',
         'type' => MENU_CALLBACK,
@@ -612,9 +612,9 @@ function cann_general_block_view($delta='') {
 function cann_general_block_user_type_content(){
     $block = '';
     if(empty($_SESSION['user_type']) || $_SESSION['user_type']== USER )
-        $block = "<span>Are you a Licenced Distributor? <a href='/define-type/".DISTRIBUTOR."'>Click Here</a></span>";
+        $block = "<span class='distributor'>Are you a Licenced Distributor? <a href='/define-type/".DISTRIBUTOR."'>Click Here</a></span>";
     else
-        $block = "<span>Are you a Marihuana Medical User? <a href='/define-type/".USER."'>Click Here</a></span>";
+        $block = "<span class='client'>Are you a Marihuana Medical User? <a href='/define-type/".USER."'>Click Here</a></span>";
     return $block;
 }
 function cann_general_block_user_type_home_content()
@@ -628,10 +628,38 @@ function cann_general_block_user_type_home_content()
     ";
     return $block;
 }
+
+//MUESTRA EL MENSAJE EN EL LISTO DE COLOR ROJO O VERDE
 function cann_general_block_user_navigation_content()
 {
-    $info = drupal_get_title();
+    //POR DEFECTO MUESTRA EL TITULO
+    $info = "<div class='listo text'>" . drupal_get_title() . "</div>";
+
+    //PERSONALIZACION POR URL
+    $url = $_GET['q'];
+//    dpm($url);
+    if($url == 'user')
+    {
+        $info = 'Log In';
+    }elseif($url == 'products' )
+    {
+        $info .= "<div class='liston sub-text'>Online ordering will be available within Canada for registered Client</div>";
+    }
+
+
+
+    //RETORNAL ALA VARIABLE INFO QUE CONTENIENE EL TITULO COMO HTML
     return $info;
 }
 
 
+function cann_general_preprocess_page(&$vars)
+{
+    $url = $_GET['q'];
+
+    if(!$vars['logged_in'] &&  $url == 'user' )
+    {
+        drupal_set_title("Login or <a class='link-register' href='/register'>Register</a>",PASS_THROUGH);
+    }
+
+}

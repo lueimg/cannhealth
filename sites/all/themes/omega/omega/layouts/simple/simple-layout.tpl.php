@@ -57,6 +57,11 @@
     <?php print render($page['sidebar_first']); ?>
     <?php print render($page['sidebar_second']); ?>
   </div>
+    <?php if(!empty($page['footer_pre'])){ ?>
+        <div class="footer_pre">
+            <?php print render($page['footer_pre']); ?>
+        </div>
+    <?php } ?>
 <div class="footer-wrap">
   <footer class="l-footer" role="contentinfo">
     <?php print render($page['footer']); ?>

@@ -47,9 +47,9 @@
       // get tagged with a 'foo-processed' class, causing all future invocations
       // of this behavior to ignore them.
 
-        $(".form-item:even").css('float','left');
-        $(".form-item:odd").css('float','right');
-        console.log("ejecutado")
+        $(".page-distributor-register .form-item:even").css('float','left');
+        $(".page-distributor-register .form-item:odd").css('float','right');
+
       $('.some-selector', context).once('foo', function () {
 
 
