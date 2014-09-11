@@ -173,6 +173,13 @@ function cann_general_menu(){
         'type' => MENU_CALLBACK,
     );
 
+    $items['checkout'] = array(
+        'title' => 'My List Products',
+        'page callback' => 'cann_general_page_checkout',
+        'access arguments' => array('You can buy medical mariahuana'),
+        'type' => MENU_CALLBACK,
+    );
+
     return $items;
 
 }
@@ -838,6 +845,9 @@ function cann_general_block_user_navigation_content()
     }elseif($url == 'products' )
     {
         $info .= "<div class='liston sub-text'>Online ordering will be available within Canada for registered Client</div>";
+    }elseif($url=='checkout')
+    {
+        $info = "Checkout";
     }
 
 
@@ -890,3 +900,50 @@ function cann_general_buy_items_cantidad()
 {
     return count($_SESSION['buylist']);
 }
+
+function cann_general_page_checkout()
+{
+    $html = "
+    <table>
+        <tr>
+            <th></th>
+            <th>PRODUCTS</th>
+            <th>GRAMS</th>
+            <th>PRICE</th>
+            <th>DELIVERY</th>
+            <th>TOTAL</th>
+            <th></th>
+        </tr>";
+    if(!count($_SESSION['buylist']))
+    {
+     $html = "<tr colspan='7'><td><a href='/products'>Continue shopping</a></td></tr>";
+    }else
+    {
+        $items = $_SESSION['buylist'];
+        foreach($items as $nid)
+        {
+            $producto = node_load($nid);
+            $foto;
+            $titulo;
+            $producer;
+            $grams;
+            $delivery;
+            $total;
+            $remove;
+        }
+    }
+
+    $html = "</table>";
+
+
+
+    return $html;
+
+
+}
+
+
+
+
+
+

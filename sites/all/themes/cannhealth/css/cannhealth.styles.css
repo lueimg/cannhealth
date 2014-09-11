@@ -19,7 +19,9 @@
   display: inline-block;
   height: 230px;
   border: 1px solid #e62d2b;
-  margin-right: 45px;
+  margin-right: 40px;
+  vertical-align: top;
+  width: 202px;
 }
 .block-home.products .views-row.views-row-last {
   margin-right: 0;
