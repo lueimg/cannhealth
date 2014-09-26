@@ -50,6 +50,25 @@
         $(".page-distributor-register .form-item:even").css('float','left');
         $(".page-distributor-register .form-item:odd").css('float','right');
 
+
+        //SEARCH PRODUCTS - PLACEHOLDER
+        $.each($(".product-filter input[type=text]"),function(){
+           var placeholder = jQuery(this).parent().parent().parent().find("label").hide().text().trim();
+            jQuery(this).attr("placeholder",placeholder);
+        });
+
+        //SELECT VARIETY
+        var option_main_text = jQuery("#edit-field-conditions-tid").parent().parent().parent().find("label").hide().text().trim()
+        jQuery("#edit-field-conditions-tid").find("option").eq(0).text(option_main_text);
+
+
+        //USER-LOGIN
+
+        var html = "<span class='forgot-pass'><a href='/user/password'>Forgot password?</a></span>";
+        $(".form-item-remember-me").append(html);
+
+
+
       $('.some-selector', context).once('foo', function () {
 
 

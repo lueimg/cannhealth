@@ -1,11 +1,11 @@
 @import "nib"
 
 //Colores
-color_red = #E62D2B
+color_red = #e62c2a
 color_green = #148E24
 
 color_main_menu = #515151
-color_home_title =  #e62c2a
+color_home_title =  color_red
 color_description = #888888 // texto debajo
 color_title_green = #518c30
 color_footer = #fff
@@ -14,8 +14,9 @@ color_footer_background = #4E4E4E
 
 color_verde_oscuro_menu = #528D33
 color_verde_clar_menu = #8FB007
+color_titulo_verde_claro = #528d32
 
-
+color_borde_caja_prodcuto = #f7bfbf 
 //tamanos
 size_base = 14px // 16px
 size_main_menu = 1.05em
@@ -35,10 +36,10 @@ width_total = 960px
 
 
 //fonts 
-// @font-face {
-// 	font-family: open;
-// 	src:url('fonts/opensans.ttf');
-// }
+@font-face {
+	font-family: liberation;
+	src:url('fonts/liberation.ttf');
+}
 
 // @font-face {
 // 	font-family: fuentechato;
@@ -124,7 +125,7 @@ width_total = 960px
 
 body
 	font-size: size_base 
-	font-family: 'helvetica'
+	font-family: 'liberation'
 	color color_description
 	&.front
 		background url('../images/background.jpg') repeat center center color_green
@@ -157,14 +158,28 @@ body
 	.form-item
 		width auto
 		text-align left
+		input
+			border 1px solid  #f29594
 	#edit-submit
 		background-color color_red
+	label
+		color  #8e8e8e
+		font-size: 12px
+		&:after
+			content:"(*)"
+			color color_red
+	span
+		&.form-required
+			display none
+	.form-item.form-type-textfield.form-item-mail
+		input
+			margin-top 5px
 		
 
 
 .checkout-top
-	float right
-	background url(../images/icons-shoppingcart.png) no-repeat 0px center transparent
+	
+	background url(../images/icons-shoppingcart.png) no-repeat 75% center transparent
 	padding 10px 40px 10px 50px
 	.nitems
 		color color_red
@@ -270,6 +285,9 @@ body
 
 
 
+.forgot-pass
+	float right
+
 .front
 	h1
 	.l-header
@@ -301,7 +319,7 @@ body
 
 
 h1
-	color color_green
+	color #528d32
 
 
 //escondemos el titulo del bloque menu principal del header
@@ -392,6 +410,10 @@ h1
 				color color_red
 
 
+#menu-390-1
+	a
+		color color_red
+
 //liston de color rojo o verde
 .navigation_text
 	background color_red
@@ -456,10 +478,21 @@ h1
 		display none
 
 
+.not-front
+	.tabs--primary
+		display none
+
+
+.page-distributor-register
+	h1
+		color color_titulo_verde_claro
+
+
 .product-filter
 	.block__title
 		color color_red
 		text-transform uppercase
+		font-size: 13px
 	.views-exposed-widget
 		width 268px
 		#edit-field-conditions-tid
@@ -468,6 +501,7 @@ h1
 			width 100%
 			border 1px solid #d2d2d2
 			padding 10px
+			border-radius 7px
 		#edit-submit-products
 			background color_green
 			color #fff
@@ -475,6 +509,9 @@ h1
 			padding 10px
 			float right
 			border none
+			font-size: 11px
+		.description
+			display none
 
 
 .page-products
@@ -482,13 +519,16 @@ h1
 		display none
 	.views-row
 		clear both
-		border 1px solid color_red
+		border 1px solid color_borde_caja_prodcuto
 		overflow hidden
 		margin-bottom 25px
 		background #EDF2EB
+		position relative
+		width 680px 
 		.views-field-field-image
 			float left
 			margin-right 15px
+			padding 4px
 		.views-field-title
 			display block
 			a
@@ -508,6 +548,9 @@ h1
 		.views-field-view-node
 			display block
 			text-align right
+			bottom 0px
+			right 0px
+			position absolute
 			a
 				color #fff
 				background color_red
@@ -515,6 +558,7 @@ h1
 				display inline-block
 				padding 8px
 				text-decoration none
+				font-size: 11px
 
 
 
@@ -643,20 +687,36 @@ h1
 		text-align center
 
 
+#block-superfish-1
+	float right
+.l-region--header
+	text-align right
+
+
 
 .user-login
 	.form-text
 		padding 10px 
-		border 1px solid #ccc
+		border 1px solid #f29594
 		border-radius 5px
 		width 300px
+	.form-item
+		display inline-block
+		width 100%
+		label
+			font-weight: normal
 	#edit-submit
 		background url('../images/icon_login.png') no-repeat 15px center color_green
-		padding 10px 20px 10px 40px
+		padding 5px 20px 5px 40px
 		border none
 		color #fff
 	.description
 		display none
+	> div
+		width 300px
+		margin 0 auto
+		
+		
 
 	
 .user_name

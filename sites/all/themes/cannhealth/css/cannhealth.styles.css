@@ -1,3 +1,7 @@
+@font-face {
+  font-family: liberation;
+  src: url("fonts/liberation.ttf");
+}
 .breadcrumb {
   display: none;
 }
@@ -18,7 +22,7 @@
 .block-home.products .views-row {
   display: inline-block;
   height: 230px;
-  border: 1px solid #e62d2b;
+  border: 1px solid #e62c2a;
   margin-right: 40px;
   vertical-align: top;
   width: 202px;
@@ -50,7 +54,7 @@
 }
 body {
   font-size: 14px;
-  font-family: 'helvetica';
+  font-family: 'liberation';
   color: #888;
 }
 body.front {
@@ -89,16 +93,32 @@ body.front {
   width: auto;
   text-align: left;
 }
+.cann-general-page-distributor-register-form .form-item input {
+  border: 1px solid #f29594;
+}
 .cann-general-page-distributor-register-form #edit-submit {
-  background-color: #e62d2b;
+  background-color: #e62c2a;
+}
+.cann-general-page-distributor-register-form label {
+  color: #8e8e8e;
+  font-size: 12px;
+}
+.cann-general-page-distributor-register-form label:after {
+  content: "(*)";
+  color: #e62c2a;
+}
+.cann-general-page-distributor-register-form span.form-required {
+  display: none;
+}
+.cann-general-page-distributor-register-form .form-item.form-type-textfield.form-item-mail input {
+  margin-top: 5px;
 }
 .checkout-top {
-  float: right;
-  background: url("../images/icons-shoppingcart.png") no-repeat 0px center transparent;
+  background: url("../images/icons-shoppingcart.png") no-repeat 75% center transparent;
   padding: 10px 40px 10px 50px;
 }
 .checkout-top .nitems {
-  color: #e62d2b;
+  color: #e62c2a;
 }
 .checkout-top .link a {
   color: #148e24;
@@ -129,7 +149,7 @@ body.front {
 .field--name-compra .go-checkout a,
 .field--name-compra .libre a {
   display: inline-block;
-  background: #e62d2b;
+  background: #e62c2a;
   color: #fff;
   padding: 8px 10px;
   text-decoration: none;
@@ -141,12 +161,12 @@ body.front {
 }
 .field--name-compra .continue a {
   float: right;
-  color: #e62d2b;
+  color: #e62c2a;
   text-transform: uppercase;
   padding-top: 15px;
 }
 .footer_pre {
-  background: #e62d2b;
+  background: #e62c2a;
   padding: 30px 0 25px 0;
   overflow: hidden;
 }
@@ -197,6 +217,9 @@ body.front {
   border-bottom: 1px dotted #ccc;
   padding: 5px 15px;
 }
+.forgot-pass {
+  float: right;
+}
 .front h1,
 .front .l-header {
   display: none;
@@ -220,7 +243,7 @@ body.front {
 .front .user-types .type a {
   display: inline-block;
   color: #fff;
-  background: #e62d2b;
+  background: #e62c2a;
   text-decoration: none;
   line-height: 2.5em;
   padding: 0 20px;
@@ -232,7 +255,7 @@ body.front {
   background: #148e24;
 }
 h1 {
-  color: #148e24;
+  color: #528d32;
 }
 .l-header h2 {
   display: none;
@@ -298,10 +321,10 @@ h1 {
   background: #dce1ca;
 }
 .l-page {
-  border-top: 1px solid #e62d2b;
+  border-top: 1px solid #e62c2a;
 }
 .link-register {
-  color: #e62d2b;
+  color: #e62c2a;
   font-weight: normal;
   text-decoration: none;
 }
@@ -320,10 +343,13 @@ h1 {
   text-decoration: none;
 }
 .m-menu li a:hover {
-  color: #e62d2b;
+  color: #e62c2a;
+}
+#menu-390-1 a {
+  color: #e62c2a;
 }
 .navigation_text {
-  background: #e62d2b;
+  background: #e62c2a;
   color: #fff;
   height: 75px;
 max-height
@@ -356,7 +382,7 @@ max-height
   margin-left: 0;
 }
 .node--product.view-mode-full .field--name-title {
-  color: #e62d2b;
+  color: #e62c2a;
   text-transform: capitalize;
 }
 .node--product.view-mode-full .field--name-field-thc-level .field__label,
@@ -389,9 +415,16 @@ max-height
 .node-type-product h1 {
   display: none;
 }
+.not-front .tabs--primary {
+  display: none;
+}
+.page-distributor-register h1 {
+  color: #528d32;
+}
 .product-filter .block__title {
-  color: #e62d2b;
+  color: #e62c2a;
   text-transform: uppercase;
+  font-size: 13px;
 }
 .product-filter .views-exposed-widget {
   width: 268px;
@@ -402,6 +435,8 @@ max-height
   width: 100%;
   border: 1px solid #d2d2d2;
   padding: 10px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
 }
 .product-filter .views-exposed-widget #edit-submit-products {
   background: #148e24;
@@ -410,20 +445,27 @@ max-height
   padding: 10px;
   float: right;
   border: none;
+  font-size: 11px;
+}
+.product-filter .views-exposed-widget .description {
+  display: none;
 }
 .page-products h1 {
   display: none;
 }
 .page-products .views-row {
   clear: both;
-  border: 1px solid #e62d2b;
+  border: 1px solid #f7bfbf;
   overflow: hidden;
   margin-bottom: 25px;
   background: #edf2eb;
+  position: relative;
+  width: 680px;
 }
 .page-products .views-row .views-field-field-image {
   float: left;
   margin-right: 15px;
+  padding: 4px;
 }
 .page-products .views-row .views-field-title {
   display: block;
@@ -450,18 +492,22 @@ max-height
 .page-products .views-row .views-field-view-node {
   display: block;
   text-align: right;
+  bottom: 0px;
+  right: 0px;
+  position: absolute;
 }
 .page-products .views-row .views-field-view-node a {
   color: #fff;
-  background: #e62d2b;
+  background: #e62c2a;
   text-transform: uppercase;
   display: inline-block;
   padding: 8px;
   text-decoration: none;
+  font-size: 11px;
 }
 .page-panel-products .form-text {
   width: 100%;
-  border: 1px solid #e62d2b;
+  border: 1px solid #e62c2a;
   padding: 10px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -488,7 +534,7 @@ max-height
   display: none;
 }
 .page-panel-products .form-actions input {
-  background: url("../images/icon_save.png") no-repeat 10px center #e62d2b;
+  background: url("../images/icon_save.png") no-repeat 10px center #e62c2a;
   color: #fff;
   padding: 8px 30px 8px 40px;
   border: none;
@@ -497,11 +543,11 @@ max-height
   float: right;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid #e62d2b;
+  border: 1px solid #e62c2a;
   padding: 20px;
 }
 .section-panel h1 {
-  color: #e62d2b;
+  color: #e62c2a;
   list-style: circle;
   display: list-item;
   font-size: 1.5em;
@@ -511,12 +557,12 @@ max-height
 .section-panel .actions-link a {
   display: inline-block;
   line-height: 3em;
-  background: #e62d2b;
+  background: #e62c2a;
   margin-bottom: 30px;
   border: 1px solid #ccc;
   text-decoration: none;
   padding: 0 20px 0 30px;
-  background: url("../images/icon_eliminar.png") no-repeat 10px center #e62d2b;
+  background: url("../images/icon_eliminar.png") no-repeat 10px center #e62c2a;
 }
 .section-panel .actions-link a.delete {
   background-color: transparent;
@@ -560,19 +606,19 @@ max-height
   background: #dce1ca;
 }
 .site-client .navigation_text {
-  background: #e62d2b;
+  background: #e62c2a;
 }
 .site-distributor.sub-home h1 {
-  color: #e62d2b;
+  color: #e62c2a;
 }
 .site-distributor .navigation_text {
   background: #148e24;
 }
 .site-distributor .block-home.products .views-row .views-field-view-node a {
-  background: #e62d2b;
+  background: #e62c2a;
 }
 .site-distributor .user-login #edit-submit {
-  background-color: #e62d2b;
+  background-color: #e62c2a;
 }
 .sub-home h1 {
   color: #518c30;
@@ -583,21 +629,38 @@ max-height
 .sub-home .l-content {
   text-align: center;
 }
+#block-superfish-1 {
+  float: right;
+}
+.l-region--header {
+  text-align: right;
+}
 .user-login .form-text {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #f29594;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   width: 300px;
 }
+.user-login .form-item {
+  display: inline-block;
+  width: 100%;
+}
+.user-login .form-item label {
+  font-weight: normal;
+}
 .user-login #edit-submit {
   background: url("../images/icon_login.png") no-repeat 15px center #148e24;
-  padding: 10px 20px 10px 40px;
+  padding: 5px 20px 5px 40px;
   border: none;
   color: #fff;
 }
 .user-login .description {
   display: none;
+}
+.user-login > div {
+  width: 300px;
+  margin: 0 auto;
 }
 .user_name {
   clear: both;
@@ -607,7 +670,7 @@ max-height
   vertical-align: top;
 }
 .user_name .label {
-  color: #e62d2b;
+  color: #e62c2a;
 }
 .user_name .name {
   color: #148e24;
@@ -629,7 +692,7 @@ max-height
   background: url("../images/ico-usuario.png") no-repeat left center transparent;
 }
 .user-type.top span a {
-  color: #e62d2b;
+  color: #e62c2a;
 }
 .welcome-text {
   text-align: center;
@@ -637,7 +700,7 @@ max-height
 .welcome-text a {
   padding: 10px;
   display: inline-block;
-  background: #e62d2b;
+  background: #e62c2a;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;

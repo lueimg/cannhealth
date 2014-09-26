@@ -35,6 +35,9 @@ function cann_general_permission()
 function cann_general_init()
 {
 
+  //drupal_add_css("https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css",["type"=>"external"]);
+
+
 $url = $_GET['q'];
     //cann_health_clean_session_type();
 
@@ -812,6 +815,13 @@ function cann_general_block_user_name_content()
 
 function cann_general_block_user_type_content(){
     $block = '';
+
+    global $user;
+
+    //SI ESTA LOGEADO NO MUESTRA NADA 
+    if(isset($user) && !empty($user->uid))
+        return "";
+
     if(empty($_SESSION['user_type']) || $_SESSION['user_type']== USER )
         $block = "<span class='distributor'>Are you a Licenced Distributor? <a href='/define-type/".DISTRIBUTOR."'>Click Here</a></span>";
     else
@@ -910,7 +920,7 @@ function cann_general_page_checkout()
             <th>PRODUCTS</th>
             <th>GRAMS</th>
             <th>PRICE</th>
-            <th>DELIVERY</th>
+            <th></th>
             <th>TOTAL</th>
             <th></th>
         </tr>";
@@ -922,18 +932,42 @@ function cann_general_page_checkout()
         $items = $_SESSION['buylist'];
         foreach($items as $nid)
         {
-            $producto = node_load($nid);
-            $foto;
-            $titulo;
-            $producer;
-            $grams;
-            $delivery;
-            $total;
-            $remove;
+            $html .="<tr>";
+            $product = node_load($nid);
+
+            $initial_grams = 10;
+
+            $pic= theme('image_style', array('path' => $product->field_image['und'][0]['uri'], 'style_name' => "thumb_product" ));
+            $title = $product->title;
+            $producer = "<label>Producer: </label>".$product->name;
+            $field_grams = "<input type='text' value='$initial_grams'>";
+            $price = $product->field_price['und'][0]['value'];
+            $total = $initial_grams * $price;
+            $remove = "<a href='#' class='check-remove'></a>";
+
+            $html .="
+                <td class='pic'>$pic</td>
+                <td>
+                    <div class='descript'>
+                        <div>$title</div>
+                        <div>$producer</div>
+                    </div>
+                </td>
+                <td class='grams'>    $field_grams   </td>
+                <td class='price'>   $price   </td>
+                <td class='sub-total'> $total   </td>
+                <td class='link-remove'>$remove</td>
+
+            ";
+
+            $html .="<tr>";
+
         }
+
+        $html .="<tr><td colspan='4'></td><td>Total</td><td><span class='check-total'></span></td></tr>";
     }
 
-    $html = "</table>";
+    $html .= "</table>";
 
 
 
