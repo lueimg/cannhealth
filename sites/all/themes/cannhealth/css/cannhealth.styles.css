@@ -254,6 +254,9 @@ body.front {
 .front .user-types .type a:hover {
   background: #148e24;
 }
+.front .user-types .type.last {
+  background-image: url("../images/icon_home2.png");
+}
 h1 {
   color: #528d32;
 }

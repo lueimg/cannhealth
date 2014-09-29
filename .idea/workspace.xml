@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cann_general.module" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="cann_general.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="963" column="39" selection-start="26160" selection-end="26160" vertical-scroll-proportion="-7.46" vertical-offset="13982" max-vertical-offset="14850">
+            <state line="69" column="25" selection-start="2024" selection-end="2037" vertical-scroll-proportion="0.31810766" vertical-offset="750" max-vertical-offset="14850">
               <folding>
                 <marker date="1411987794000" expanded="true" signature="20603:20836" placeholder="..." />
                 <marker date="1411987794000" expanded="true" signature="20921:21022" placeholder="..." />
@@ -53,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/default/settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="26" selection-start="7935" selection-end="7935" vertical-scroll-proportion="0.28169015" vertical-offset="2400" max-vertical-offset="7845">
+            <state line="222" column="26" selection-start="7935" selection-end="7935" vertical-scroll-proportion="-7.5" vertical-offset="2400" max-vertical-offset="7845">
               <folding />
             </state>
           </provider>
@@ -690,9 +690,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="14" selection-start="4075" selection-end="4075" vertical-scroll-proportion="0.0" vertical-offset="492" max-vertical-offset="1920">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/default/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="222" column="26" selection-start="7935" selection-end="7935" vertical-scroll-proportion="-7.5" vertical-offset="2400" max-vertical-offset="7845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="963" column="39" selection-start="26160" selection-end="26160" vertical-scroll-proportion="-7.46" vertical-offset="13982" max-vertical-offset="14850">
+        <state line="69" column="25" selection-start="2024" selection-end="2037" vertical-scroll-proportion="0.31810766" vertical-offset="750" max-vertical-offset="14850">
           <folding>
             <marker date="1411987794000" expanded="true" signature="20603:20836" placeholder="..." />
             <marker date="1411987794000" expanded="true" signature="20921:21022" placeholder="..." />
@@ -706,20 +720,6 @@
             <marker date="1411987794000" expanded="true" signature="25713:25909" placeholder="..." />
             <marker date="1411987794000" expanded="true" signature="25756:25887" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="14" selection-start="4075" selection-end="4075" vertical-scroll-proportion="0.0" vertical-offset="492" max-vertical-offset="1920">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/default/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="26" selection-start="7935" selection-end="7935" vertical-scroll-proportion="0.28169015" vertical-offset="2400" max-vertical-offset="7845">
-          <folding />
         </state>
       </provider>
     </entry>
