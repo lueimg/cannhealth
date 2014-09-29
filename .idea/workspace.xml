@@ -26,17 +26,19 @@
       <file leaf-file-name="cann_general.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="820" column="38" selection-start="21765" selection-end="21765" vertical-scroll-proportion="0.52738655" vertical-offset="11873" max-vertical-offset="14745">
+            <state line="976" column="41" selection-start="26428" selection-end="26440" vertical-scroll-proportion="0.92659056" vertical-offset="13982" max-vertical-offset="14850">
               <folding>
-                <marker date="1411725037000" expanded="true" signature="20304:20537" placeholder="..." />
-                <marker date="1411725037000" expanded="true" signature="20622:20723" placeholder="..." />
-                <marker date="1411725037000" expanded="true" signature="20647:20712" placeholder="..." />
-                <marker date="1411725037000" expanded="true" signature="20905:21052" placeholder="..." />
-                <marker date="1411725037000" expanded="true" signature="21233:21380" placeholder="..." />
-                <marker date="1411725037000" expanded="true" signature="24211:24415" placeholder="..." />
-                <marker date="1411725037000" expanded="true" signature="24224:24415" placeholder="..." />
-                <marker date="1411725037000" expanded="true" signature="25316:25495" placeholder="..." />
-                <marker date="1411725037000" expanded="true" signature="25359:25473" placeholder="..." />
+                <marker date="1411987794000" expanded="true" signature="20603:20836" placeholder="..." />
+                <marker date="1411987794000" expanded="true" signature="20921:21022" placeholder="..." />
+                <marker date="1411987794000" expanded="true" signature="20946:21011" placeholder="..." />
+                <marker date="1411987794000" expanded="true" signature="21204:21351" placeholder="..." />
+                <marker date="1411987794000" expanded="true" signature="21532:21679" placeholder="..." />
+                <marker date="1411987794000" expanded="true" signature="24526:24730" placeholder="..." />
+                <marker date="1411987794000" expanded="true" signature="24539:24730" placeholder="..." />
+                <marker date="1411987794000" expanded="true" signature="25012:25113" placeholder="..." />
+                <marker date="1411987794000" expanded="true" signature="25713:25745" placeholder="..." />
+                <marker date="1411987794000" expanded="true" signature="25713:25909" placeholder="..." />
+                <marker date="1411987794000" expanded="true" signature="25756:25887" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -45,7 +47,7 @@
       <file leaf-file-name="cannhealth.behaviors.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="44" selection-start="3174" selection-end="3174" vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="1395">
+            <state line="91" column="14" selection-start="4075" selection-end="4075" vertical-scroll-proportion="0.0" vertical-offset="492" max-vertical-offset="1920">
               <folding />
             </state>
           </provider>
@@ -330,6 +332,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RunManager" selected="PHPUnit.cann_general">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -385,14 +388,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37357953" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38668555" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2180937" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22455573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.273021" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4275568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -508,11 +511,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/afb/afb.install">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.2542373" vertical-offset="0" max-vertical-offset="975" />
-      </provider>
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.2542373" vertical-offset="0" max-vertical-offset="975" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/afb/afb.module">
@@ -662,13 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/common.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5158" column="0" selection-start="196429" selection-end="196429" vertical-scroll-proportion="-4.9583335" vertical-offset="77161" max-vertical-offset="123525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/bootstrap.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2267" column="0" selection-start="77779" selection-end="77779" vertical-scroll-proportion="-4.9583335" vertical-offset="33841" max-vertical-offset="52455">
@@ -678,31 +674,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="270">
-          <folding />
+        <state line="20" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="270" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/common.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3988" column="35" selection-start="149831" selection-end="149831" vertical-scroll-proportion="0.32137287" vertical-offset="59524" max-vertical-offset="123525">
+          <folding>
+            <marker date="1411363974000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="44" selection-start="3174" selection-end="3174" vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="1395">
+        <state line="91" column="14" selection-start="4075" selection-end="4075" vertical-scroll-proportion="0.0" vertical-offset="492" max-vertical-offset="1920">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="820" column="38" selection-start="21765" selection-end="21765" vertical-scroll-proportion="0.52738655" vertical-offset="11873" max-vertical-offset="14745">
+        <state line="976" column="41" selection-start="26428" selection-end="26440" vertical-scroll-proportion="0.92659056" vertical-offset="13982" max-vertical-offset="14850">
           <folding>
-            <marker date="1411725037000" expanded="true" signature="20304:20537" placeholder="..." />
-            <marker date="1411725037000" expanded="true" signature="20622:20723" placeholder="..." />
-            <marker date="1411725037000" expanded="true" signature="20647:20712" placeholder="..." />
-            <marker date="1411725037000" expanded="true" signature="20905:21052" placeholder="..." />
-            <marker date="1411725037000" expanded="true" signature="21233:21380" placeholder="..." />
-            <marker date="1411725037000" expanded="true" signature="24211:24415" placeholder="..." />
-            <marker date="1411725037000" expanded="true" signature="24224:24415" placeholder="..." />
-            <marker date="1411725037000" expanded="true" signature="25316:25495" placeholder="..." />
-            <marker date="1411725037000" expanded="true" signature="25359:25473" placeholder="..." />
+            <marker date="1411987794000" expanded="true" signature="20603:20836" placeholder="..." />
+            <marker date="1411987794000" expanded="true" signature="20921:21022" placeholder="..." />
+            <marker date="1411987794000" expanded="true" signature="20946:21011" placeholder="..." />
+            <marker date="1411987794000" expanded="true" signature="21204:21351" placeholder="..." />
+            <marker date="1411987794000" expanded="true" signature="21532:21679" placeholder="..." />
+            <marker date="1411987794000" expanded="true" signature="24526:24730" placeholder="..." />
+            <marker date="1411987794000" expanded="true" signature="24539:24730" placeholder="..." />
+            <marker date="1411987794000" expanded="true" signature="25012:25113" placeholder="..." />
+            <marker date="1411987794000" expanded="true" signature="25713:25745" placeholder="..." />
+            <marker date="1411987794000" expanded="true" signature="25713:25909" placeholder="..." />
+            <marker date="1411987794000" expanded="true" signature="25756:25887" placeholder="..." />
           </folding>
         </state>
       </provider>

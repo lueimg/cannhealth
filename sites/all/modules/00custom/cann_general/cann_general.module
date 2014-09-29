@@ -37,6 +37,9 @@ function cann_general_init()
 
   //drupal_add_css("https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css",["type"=>"external"]);
 
+    drupal_add_js('//cdnjs.cloudflare.com/ajax/libs/json2/20121008/json2.js', 'external');
+    drupal_add_js('//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js', 'external');
+    drupal_add_js('//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js', 'external');
 
 $url = $_GET['q'];
     //cann_health_clean_session_type();
@@ -168,7 +171,7 @@ function cann_general_menu(){
         'type' => MENU_CALLBACK,
     );
 
-    $items['buy/remove/%nid'] = array(
+    $items['checkout/remove/%'] = array(
         'title' => '',
         'page callback' => 'cann_general_buy_remove',
         'page arguments' => array(2),
@@ -818,7 +821,7 @@ function cann_general_block_user_type_content(){
 
     global $user;
 
-    //SI ESTA LOGEADO NO MUESTRA NADA 
+    //SI ESTA LOGEADO NO MUESTRA NADA
     if(isset($user) && !empty($user->uid))
         return "";
 
@@ -902,7 +905,7 @@ function cann_general_buy_remove($nid)
 {
 
     unset($_SESSION['buylist'][$nid]);
-    drupal_goto('node/'.$nid);
+    drupal_goto('checkout');
 
 }
 
@@ -914,7 +917,7 @@ function cann_general_buy_items_cantidad()
 function cann_general_page_checkout()
 {
     $html = "
-    <table>
+    <table class='t-checkout'>
         <tr>
             <th></th>
             <th>PRODUCTS</th>
@@ -930,12 +933,13 @@ function cann_general_page_checkout()
     }else
     {
         $items = $_SESSION['buylist'];
+        $total_final = 0;
         foreach($items as $nid)
         {
             $html .="<tr>";
             $product = node_load($nid);
 
-            $initial_grams = 10;
+            $initial_grams = 1;
 
             $pic= theme('image_style', array('path' => $product->field_image['und'][0]['uri'], 'style_name' => "thumb_product" ));
             $title = $product->title;
@@ -943,31 +947,34 @@ function cann_general_page_checkout()
             $field_grams = "<input type='text' value='$initial_grams'>";
             $price = $product->field_price['und'][0]['value'];
             $total = $initial_grams * $price;
-            $remove = "<a href='#' class='check-remove'></a>";
+            $total_final += $total;
+            $remove = "<a href='/checkout/remove/$nid' class='check-remove'>*</a>";
 
             $html .="
                 <td class='pic'>$pic</td>
                 <td>
                     <div class='descript'>
                         <div>$title</div>
-                        <div>$producer</div>
+                        <div class='producer'>$producer</div>
                     </div>
                 </td>
                 <td class='grams'>    $field_grams   </td>
-                <td class='price'>   $price   </td>
-                <td class='sub-total'> $total   </td>
+                <td class='price' data-price='$price'>$   $price   </td>
+                <td class='sub-total' data-subtotal='$total'>$ $total   </td>
                 <td class='link-remove'>$remove</td>
 
             ";
 
-            $html .="<tr>";
+            $html .="</tr>";
 
         }
 
-        $html .="<tr><td colspan='4'></td><td>Total</td><td><span class='check-total'></span></td></tr>";
+        $html .="<tr class='total'><td colspan='4'></td><td>TOTAL</td><td><span class='check-total'>$ $total_final</span></td></tr>";
     }
 
     $html .= "</table>";
+
+    $html .= "<button class='btn_checkout'>Checkout</button>";
 
 
 

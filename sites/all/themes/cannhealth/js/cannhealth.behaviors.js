@@ -69,6 +69,34 @@
 
 
 
+        //chekcout
+        jQuery(".grams input").keyup(function(){
+           var price =  jQuery(this).parent().parent().find(".price").attr("data-price");
+           var grams = jQuery(this).val();
+           var subtotal = parseFloat(price) * parseFloat(grams);
+           jQuery(this).parent().parent().find(".sub-total").text("$" + subtotal).attr("data-subtotal",subtotal);
+
+
+            //total General
+//            var list = _.map(jQuery(".sub-total"),function(i){ return jQuery(i).attr("data-subtotal")})
+//            var total = _.reduce(list,function(total,item){ return parseFloat(total) + parseFloat(item) })
+//
+//            jQuery(".check-total").text("$ "+total)
+            CalcularTotal()
+
+
+
+        });
+
+        jQuery(".check-remove").click(function(e){
+            //e.preventDefault();
+            jQuery(this).parent().parent().remove();
+            CalcularTotal()
+
+        });
+
+
+
       $('.some-selector', context).once('foo', function () {
 
 
@@ -82,6 +110,13 @@
     }
   };
 
+    function CalcularTotal(){
+        var list = _.map(jQuery(".sub-total"),function(i){ return jQuery(i).attr("data-subtotal")})
+        var total = _.reduce(list,function(total,item){ return parseFloat(total) + parseFloat(item) })
+
+        jQuery(".check-total").text("$ "+total)
+
+    }
 
 
 })(jQuery);
