@@ -10,6 +10,7 @@
   display: inline-block;
   text-align: left;
   margin-right: 50px;
+  vertical-align: top;
 }
 .block-home .block__title {
   color: #148e24;
@@ -22,7 +23,7 @@
 .block-home.products .views-row {
   display: inline-block;
   height: 230px;
-  border: 1px solid #e62c2a;
+  border: 1px solid #f7bfbf;
   margin-right: 40px;
   vertical-align: top;
   width: 202px;
@@ -31,7 +32,7 @@
   margin-right: 0;
 }
 .block-home.products .views-row .views-field-title a {
-  color: #148e24;
+  color: #518c30;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
@@ -83,6 +84,8 @@ body.front {
   border-radius: 0px;
   border: none;
   margin: 10px auto;
+  position: relative;
+  left: 23%;
   background: url("../images/check_register.png") no-repeat 10px center #148e24;
 }
 .cann-general-page-distributor-register-form {
@@ -196,6 +199,7 @@ body.front {
   padding: 10px 30px;
   border-bottom: 1px solid #ccc;
   margin-bottom: 0;
+  color: #fff;
 }
 .footer-wrap .l-footer .block {
   display: inline-block;
@@ -216,9 +220,13 @@ body.front {
 .footer-wrap #block-superfish-1--2 li a {
   border-bottom: 1px dotted #ccc;
   padding: 5px 15px;
+  color: #b5b5b5;
 }
 .forgot-pass {
   float: right;
+}
+.forgot-pass a {
+  color: #e62c2a;
 }
 .front h1,
 .front .l-header {
@@ -231,13 +239,17 @@ body.front {
   display: inline-block;
   margin-top: 50px;
 }
+.front .user_type {
+  font-size: 1.4em;
+  color: #000;
+}
 .front .user-types {
   text-align: center;
 }
 .front .user-types .type {
   display: inline-block;
   padding: 135px 0 0 0;
-  margin: 15px 150px;
+  margin: 15px 120px;
   background: url("../images/icon_home1.png") no-repeat top center transparent;
 }
 .front .user-types .type a {
@@ -245,11 +257,12 @@ body.front {
   color: #fff;
   background: #e62c2a;
   text-decoration: none;
-  line-height: 2.5em;
+  line-height: 1.8em;
   padding: 0 20px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   margin: 10px;
+  font-size: 1em;
 }
 .front .user-types .type a:hover {
   background: #148e24;
@@ -615,7 +628,7 @@ max-height
   color: #e62c2a;
 }
 .site-distributor .navigation_text {
-  background: #148e24;
+  background: #528d32;
 }
 .site-distributor .block-home.products .views-row .views-field-view-node a {
   background: #e62c2a;
@@ -628,6 +641,7 @@ max-height
   font-size: 3.7em;
   text-align: center;
   margin-bottom: 10px;
+  font-weight: normal;
 }
 .sub-home .l-content {
   text-align: center;

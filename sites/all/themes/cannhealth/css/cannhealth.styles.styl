@@ -85,6 +85,7 @@ width_total = 960px
 		display inline-block
 		text-align left
 		margin-right 50px
+		vertical-align top
 	.block__title
 		color color_green
 		font-size:  size_title_green
@@ -95,7 +96,7 @@ width_total = 960px
 		.views-row
 			display inline-block
 			height 230px
-			border 1px solid color_red
+			border 1px solid  #f7bfbf
 			margin-right: 40px;
 			vertical-align: top;
 			width: 202px;
@@ -103,7 +104,7 @@ width_total = 960px
 				margin-right 0
 			.views-field-title
 				a
-					color color_green
+					color #518c30
 					text-transform uppercase
 					text-decoration none 
 					font-weight  bold
@@ -149,6 +150,8 @@ body
 		border-radius 0px
 		border none
 		margin 10px auto
+		position: relative;
+		left: 23%;
 		background url('../images/check_register.png') no-repeat 10px center color_green
 
 
@@ -262,6 +265,7 @@ body
 		padding 10px 30px
 		border-bottom 1px solid #ccc
 		margin-bottom 0
+		color #fff
 
 	.l-footer
 		.block
@@ -281,12 +285,15 @@ body
 			a
 				border-bottom 1px dotted #ccc
 				padding 5px 15px
+				color #b5b5b5
 
 
 
 
 .forgot-pass
 	float right
+	a
+		color color_red
 
 .front
 	h1
@@ -298,22 +305,26 @@ body
 		height 297px
 		display inline-block
 		margin-top 50px
+	.user_type
+		font-size 1.4em
+		color #000
 	.user-types
 		text-align center
 		.type
 			display inline-block
 			padding 135px 0 0 0
-			margin 15px 150px
+			margin 15px 120px
 			background url('../images/icon_home1.png') no-repeat top center transparent
 			a
 				display inline-block
 				color #fff
 				background color_red
 				text-decoration none
-				line-height 2.5em
+				line-height 1.8em
 				padding 0 20px
 				border-radius 5px
 				margin 10px
+				font-size: 1em
 				&:hover
 					background color_green
 			&.last
@@ -665,7 +676,7 @@ h1
 		h1
 			color color_red
 	.navigation_text
-		background color_green
+		background #528d32
 	.block-home.products 
 		.views-row 
 			.views-field-view-node 
@@ -685,6 +696,7 @@ h1
 		font-size: size_home_title
 		text-align center
 		margin-bottom 10px
+		font-weight: normal
 	.l-content
 		text-align center
 
