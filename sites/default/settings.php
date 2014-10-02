@@ -226,6 +226,24 @@ $databases = array (
   ),
 );
 
+
+
+$databases = array (
+    'default' =>
+        array (
+            'default' =>
+                array (
+                    'database' => 'cannhealt',
+                    'username' => 'root',
+                    'password' => '123',
+                    'host' => '127.0.0.1',
+                    'port' => '3306',
+                    'driver' => 'mysql',
+                    'prefix' => '',
+                ),
+        ),
+);
+
 /**
  * Access control for update.php script.
  *
@@ -278,7 +296,7 @@ $drupal_hash_salt = 'rNUEviZSINRiJe9FGVxInHx_r0hGXItGi-0hzi6qD0o';
  * It is not allowed to have a trailing slash; Drupal will add it
  * for you.
  */
-$base_url = 'http://cannhealth.limadot.net';  // NO trailing slash!
+// $base_url = 'http://cannhealth.limadot.net';  // NO trailing slash!
 
 /**
  * PHP settings:

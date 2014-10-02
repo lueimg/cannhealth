@@ -344,6 +344,51 @@ h1 {
   font-weight: normal;
   text-decoration: none;
 }
+.long-info {
+  float: left;
+  width: 500px;
+  font-size: 1.2em;
+}
+.long-info #header-text {
+  color: #518c30;
+  font-size: 1.3rem;
+  margin-top: 30px;
+}
+.long-info .title-text {
+  color: #e62c2a;
+}
+.long-info .title-text .num {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  background: #e62c2a;
+}
+.long-info .title-text p {
+  display: inline-block;
+}
+.long-info .description {
+  padding-left: 40px;
+}
+.long-info .description ul {
+  padding-left: 20px;
+}
+.cann-general-page-client-register-form {
+  float: right;
+}
+.cann-general-page-client-register-form .form-submit {
+  float: right;
+  position: static !important;
+}
+.register-info {
+  float: right;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #e62c2a;
+  padding: 20px;
+  clear: both;
+}
 .m-menu li {
   font-size: 1.05em;
   text-transform: uppercase;
@@ -554,13 +599,6 @@ max-height
   color: #fff;
   padding: 8px 30px 8px 40px;
   border: none;
-}
-.register-info {
-  float: right;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #e62c2a;
-  padding: 20px;
 }
 .section-panel h1 {
   color: #e62c2a;

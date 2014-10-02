@@ -95,6 +95,8 @@
 
         });
 
+        jQuery(".page-client-register h1").prependTo(jQuery("#cann-general-page-client-register-form"))
+
 
 
       $('.some-selector', context).once('foo', function () {

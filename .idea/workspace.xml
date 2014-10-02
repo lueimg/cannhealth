@@ -23,31 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cann_general.module" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cann_general.module" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="25" selection-start="2024" selection-end="2037" vertical-scroll-proportion="1.4788733" vertical-offset="0" max-vertical-offset="14850">
-              <folding>
-                <marker date="1411987794000" expanded="true" signature="20603:20836" placeholder="..." />
-                <marker date="1411987794000" expanded="true" signature="20921:21022" placeholder="..." />
-                <marker date="1411987794000" expanded="true" signature="20946:21011" placeholder="..." />
-                <marker date="1411987794000" expanded="true" signature="21204:21351" placeholder="..." />
-                <marker date="1411987794000" expanded="true" signature="21532:21679" placeholder="..." />
-                <marker date="1411987794000" expanded="true" signature="24526:24730" placeholder="..." />
-                <marker date="1411987794000" expanded="true" signature="24539:24730" placeholder="..." />
-                <marker date="1411987794000" expanded="true" signature="25012:25113" placeholder="..." />
-                <marker date="1411987794000" expanded="true" signature="25713:25745" placeholder="..." />
-                <marker date="1411987794000" expanded="true" signature="25713:25909" placeholder="..." />
-                <marker date="1411987794000" expanded="true" signature="25756:25887" placeholder="..." />
-              </folding>
+            <state line="69" column="25" selection-start="2024" selection-end="2037" vertical-scroll-proportion="-0.0" vertical-offset="1035" max-vertical-offset="14940">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cannhealth.behaviors.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="cannhealth.behaviors.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="14" selection-start="4075" selection-end="4075" vertical-scroll-proportion="0.0" vertical-offset="492" max-vertical-offset="1920">
+            <state line="97" column="38" selection-start="4228" selection-end="4228" vertical-scroll-proportion="0.7058824" vertical-offset="987" max-vertical-offset="1950">
               <folding />
             </state>
           </provider>
@@ -56,7 +44,16 @@
       <file leaf-file-name="settings.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/default/settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="26" selection-start="7935" selection-end="7935" vertical-scroll-proportion="0.0" vertical-offset="3330" max-vertical-offset="8595">
+            <state line="238" column="20" selection-start="8244" selection-end="8244" vertical-scroll-proportion="-8.5" vertical-offset="2616" max-vertical-offset="8115">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
               <folding />
             </state>
           </provider>
@@ -86,9 +83,11 @@
         <option value="$PROJECT_DIR$/includes/menu.inc" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/sites/all/libraries/flexslider/jquery.flexslider.js" />
-        <option value="$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js" />
         <option value="$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/sites/default/settings.php" />
+        <option value="$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js" />
       </list>
     </option>
   </component>
@@ -432,14 +431,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38668555" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38636363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22455573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27705976" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21082391" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4275568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -473,16 +472,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/faq/faq.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="210" selection-end="210" vertical-scroll-proportion="0.16431925" vertical-offset="0" max-vertical-offset="24060" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/sass/variables/_colors.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="676" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/sass/cannhealth.styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="676" />
@@ -698,9 +687,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/module.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="895" column="0" selection-start="32616" selection-end="32616" vertical-scroll-proportion="-4.9583335" vertical-offset="13261" max-vertical-offset="16590">
-          <folding />
-        </state>
+        <state line="895" column="0" selection-start="32616" selection-end="32616" vertical-scroll-proportion="-4.9583335" vertical-offset="13261" max-vertical-offset="16590" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/bootstrap.inc">
@@ -710,48 +697,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="498" selection-end="498" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="270" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/common.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3988" column="35" selection-start="149831" selection-end="149831" vertical-scroll-proportion="0.32137287" vertical-offset="59524" max-vertical-offset="123525">
+        <state line="3988" column="35" selection-start="149831" selection-end="149831" vertical-scroll-proportion="0.32137287" vertical-offset="59524" max-vertical-offset="123525" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="25" selection-start="2024" selection-end="2037" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="14940">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js">
+    <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="14" selection-start="4075" selection-end="4075" vertical-scroll-proportion="0.0" vertical-offset="492" max-vertical-offset="1920">
+        <state line="133" column="53" selection-start="5479" selection-end="5479" vertical-scroll-proportion="0.6380091" vertical-offset="1572" max-vertical-offset="2235" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="529" selection-end="529" vertical-scroll-proportion="0.2760736" vertical-offset="0" max-vertical-offset="652">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/default/settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="26" selection-start="7935" selection-end="7935" vertical-scroll-proportion="0.0" vertical-offset="3330" max-vertical-offset="8595">
+        <state line="238" column="20" selection-start="8244" selection-end="8244" vertical-scroll-proportion="-8.5" vertical-offset="2616" max-vertical-offset="8115">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="25" selection-start="2024" selection-end="2037" vertical-scroll-proportion="1.4788733" vertical-offset="0" max-vertical-offset="14850">
-          <folding>
-            <marker date="1411987794000" expanded="true" signature="20603:20836" placeholder="..." />
-            <marker date="1411987794000" expanded="true" signature="20921:21022" placeholder="..." />
-            <marker date="1411987794000" expanded="true" signature="20946:21011" placeholder="..." />
-            <marker date="1411987794000" expanded="true" signature="21204:21351" placeholder="..." />
-            <marker date="1411987794000" expanded="true" signature="21532:21679" placeholder="..." />
-            <marker date="1411987794000" expanded="true" signature="24526:24730" placeholder="..." />
-            <marker date="1411987794000" expanded="true" signature="24539:24730" placeholder="..." />
-            <marker date="1411987794000" expanded="true" signature="25012:25113" placeholder="..." />
-            <marker date="1411987794000" expanded="true" signature="25713:25745" placeholder="..." />
-            <marker date="1411987794000" expanded="true" signature="25713:25909" placeholder="..." />
-            <marker date="1411987794000" expanded="true" signature="25756:25887" placeholder="..." />
-          </folding>
+        <state line="97" column="38" selection-start="4228" selection-end="4228" vertical-scroll-proportion="0.7058824" vertical-offset="987" max-vertical-offset="1950">
+          <folding />
         </state>
       </provider>
     </entry>
