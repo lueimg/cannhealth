@@ -141,3 +141,5 @@ DirectoryIndex index.php index.html index.htm
     </FilesMatch>
   </IfModule>
 </IfModule>
+
+AddHandler application/x-httpd-php54 .php .php5 .php4 .php3
