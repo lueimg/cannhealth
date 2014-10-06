@@ -126,12 +126,28 @@ function cann_general_menu(){
         'type' => MENU_CALLBACK,
     );
 
+    $items['panel/transactions'] = array(
+        'title' => 'Manage your Transactions',
+        'page callback' => 'cann_general_page_panel_transaction',
+        'access arguments' => array('administer my panel manager'),
+        'type' => MENU_CALLBACK,
+    );
+
+    $items['panel/order-history'] = array(
+        'title' => 'Order History',
+        'page callback' => 'cann_general_page_order_history',
+        'access arguments' => array('administer my panel manager'),
+        'type' => MENU_CALLBACK,
+    );
+
     $items['panel/products'] = array(
         'title' => 'Manage your Products',
         'page callback' => 'cann_general_page_panel_product_list',
         'access arguments' => array('administer my panel manager'),
         'type' => MENU_CALLBACK,
     );
+
+
 
     $items['panel/products/add'] = array(
         'title' => 'Manage your Products',
@@ -297,7 +313,7 @@ function cann_general_page_distributor_register_form($node, &$form_state){
 
     $form['address'] = array(
         '#type' => 'textfield',
-        '#title' => 'Adress',
+        '#title' => 'Address',
         '#default_value' =>'',
         '#required' => TRUE,
     );
@@ -639,7 +655,7 @@ function cann_general_page_client_register_form($node, &$form_state){
 
     $form['address'] = array(
         '#type' => 'textfield',
-        '#title' => 'Adress',
+        '#title' => 'Address',
         '#default_value' =>'',
         '#required' => TRUE,
     );
@@ -680,8 +696,8 @@ function cann_general_page_client_register_form_submit($form, &$form_state) {
 
     //NOTIFICATION TO ADMINISTRATORS
     //NOTIFICATION TO CLIENT.
-
-    drupal_goto("home");
+    $deb = 1;
+    drupal_goto($_SESSION['user_type']);
     drupal_set_message("Thank you for registering");
 }
 
@@ -984,7 +1000,13 @@ function cann_general_page_checkout()
 }
 
 
+function cann_general_page_panel_transaction()
+{
+    return "";
+}
 
-
-
+function cann_general_page_order_history()
+{
+    return '';
+}
 

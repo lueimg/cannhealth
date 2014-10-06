@@ -53,6 +53,18 @@
   margin: 10px;
   font-size: 0.8em;
 }
+.footer-wrap .block-footer#block-menu-menu-panner-manager--2 .menu {
+  padding: 0 0 0 10px;
+  margin: 0;
+}
+.footer-wrap .block-footer a {
+  border-bottom: 1px dotted #ccc;
+  padding: 5px 15px;
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #b5b5b5;
+}
 body {
   font-size: 14px;
   font-family: 'liberation';
@@ -148,8 +160,21 @@ body.front {
   display: inline-block;
   padding: 3px 5px;
 }
+.faq-question a {
+  text-decoration: none;
+  list-style-type: disc;
+  display: list-item;
+  text-transform: none;
+  color: #111;
+}
+.faq-question a:hover {
+  text-decoration: underline;
+}
+.faq-answer .remove a,
 .field--name-compra .remove a,
+.faq-answer .go-checkout a,
 .field--name-compra .go-checkout a,
+.faq-answer .libre a,
 .field--name-compra .libre a {
   display: inline-block;
   background: #e62c2a;
@@ -157,11 +182,13 @@ body.front {
   padding: 8px 10px;
   text-decoration: none;
 }
+.faq-answer .go-checkout a,
 .field--name-compra .go-checkout a {
   background: #148e24;
   vertical-align: bottom;
   padding: 11px;
 }
+.faq-answer .continue a,
 .field--name-compra .continue a {
   float: right;
   color: #e62c2a;
@@ -190,6 +217,9 @@ body.front {
   text-decoration: none;
   background: url("../images/icon_register.png") no-repeat 17px center #148e24;
 }
+#edit-field-max-gram-per-month {
+  display: none;
+}
 .footer-wrap {
   background: #4e4e4e;
 }
@@ -204,7 +234,7 @@ body.front {
 .footer-wrap .l-footer .block {
   display: inline-block;
   vertical-align: top;
-  width: 180px;
+  width: 172px;
   margin: 0 30px;
 }
 .footer-wrap .l-footer .block a {
@@ -310,7 +340,10 @@ h1 {
 .l-main .l-region--sidebar-first .block__title {
   display: none;
 }
-.l-main .l-region--sidebar-first .panel #dhtml_menu-458 > a {
+.l-main .l-region--sidebar-first .panel ul.menu {
+  margin: 0;
+}
+.l-main .l-region--sidebar-first .panel li.first.last > a {
   display: block;
   background: #528d33;
   color: #fff;
@@ -319,21 +352,22 @@ h1 {
   padding: 5px 5px;
   font-style: normal;
 }
-.l-main .l-region--sidebar-first .panel #dhtml_menu-458 ul {
+.l-main .l-region--sidebar-first .panel li.first.last ul {
   padding: 0;
+  margin: 0;
 }
-.l-main .l-region--sidebar-first .panel #dhtml_menu-458 ul li {
+.l-main .l-region--sidebar-first .panel li.first.last ul li {
   list-style: none;
 }
-.l-main .l-region--sidebar-first .panel #dhtml_menu-458 ul li a {
+.l-main .l-region--sidebar-first .panel li.first.last ul li a {
   display: block;
   color: #148e24;
   text-decoration: none;
   border-bottom: 1px dotted #148e24;
   padding: 5px 15px;
 }
-.l-main .l-region--sidebar-first .panel #dhtml_menu-458 ul li a:hover,
-.l-main .l-region--sidebar-first .panel #dhtml_menu-458 ul li a.active-trail {
+.l-main .l-region--sidebar-first .panel li.first.last ul li a:hover,
+.l-main .l-region--sidebar-first .panel li.first.last ul li a.active-trail {
   background: #dce1ca;
 }
 .l-page {
@@ -599,6 +633,18 @@ max-height
   color: #fff;
   padding: 8px 30px 8px 40px;
   border: none;
+  margin: 10px;
+}
+.products.in-fullpage h2 {
+  background: #e62c2a;
+  color: #fff;
+  text-transform: none;
+  font-weight: normal;
+  padding: 5px 30px;
+}
+.products.in-fullpage .views-row {
+  text-align: center;
+  height: 185px;
 }
 .section-panel h1 {
   color: #e62c2a;
@@ -659,6 +705,19 @@ max-height
 .section-panel table .action-link:hover {
   background: #dce1ca;
 }
+.sidebar-active .l-main {
+  position: relative;
+}
+.sidebar-active .l-region--sidebar-first {
+  position: absolute;
+  height: 100%;
+  -webkit-box-shadow: 9px 1px 9px #ccc;
+  box-shadow: 9px 1px 9px #ccc;
+}
+.sidebar-active .l-content {
+  padding-left: 40px;
+  min-height: 300px;
+}
 .site-client .navigation_text {
   background: #e62c2a;
 }
@@ -685,6 +744,7 @@ max-height
   text-align: center;
 }
 #block-superfish-1 {
+  width: 100%;
   float: right;
 }
 .l-region--header {
@@ -777,7 +837,7 @@ max-height
 }
 .user-type.top span {
   display: inline-block;
-  width: 250px;
+  width: 230px;
   height: 35px;
   margin-top: 25px;
   color: #518c30;
