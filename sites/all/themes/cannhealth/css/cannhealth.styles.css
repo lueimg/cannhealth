@@ -53,6 +53,27 @@
   margin: 10px;
   font-size: 0.8em;
 }
+.flexslider {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.flexslider:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background: url("../images/sombra-slider.png") no-repeat center center transparent;
+}
+.flexslider .flex-control-nav {
+  bottom: 15px;
+  z-index: 9999;
+}
+.flexslider .flex-control-nav li a {
+  background: #fff;
+}
+.flexslider .flex-control-nav li .flex-active {
+  background: #148e24;
+}
 .footer-wrap .block-footer.panel .menu,
 .footer-wrap .block-footer.support .menu {
   padding: 0 0 0 10px;
