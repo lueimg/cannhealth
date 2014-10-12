@@ -246,6 +246,12 @@ body
 			padding 3px 5px
 
 
+
+.description_page 
+	margin: 0 auto;
+	width: 960px;
+
+
 .faq-question
 	a
 		text-decoration none
@@ -523,20 +529,20 @@ h1
 	background color_red
 	color #fff
 	height 75px
-	max-height 
+	margin-bottom 5px
+	.l-region--navigation-text
+		height 100%
 	.navigation
-		font-size: 1.3em;
-		line-height: 3.5em;
+		font-size: 1.3em
 		margin: 0 auto;
 		max-width: width_total;
 		text-transform: uppercase;
 		position relative
+		top 50%
+		transform translateY(-50%)
 		.sub-text
-			left: 0;
 			padding-left: 30px;
-			position: absolute;
 			text-transform: none;
-			top: 24px;
 			background url("../images/check_register.png") no-repeat left center transparent
 
 .node--product
@@ -576,7 +582,9 @@ h1
 
 
 
+
 //esconde el titulo por defecto
+.node-type-page
 .node-type-product
 	h1
 		display none

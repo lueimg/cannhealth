@@ -9,6 +9,7 @@ regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[slider]         = Slider
 regions[navigation_text]= Navigation text
+regions[description_page]= Description page
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content

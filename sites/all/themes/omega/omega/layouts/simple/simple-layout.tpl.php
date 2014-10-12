@@ -34,6 +34,14 @@
         <?php print render($page['navigation_text']); ?>
     </div>
     <?php } ?>
+
+    <?php if(!empty($page['description_page'])){ ?>
+        <div class="description_page">
+            <?php print render($page['description_page']); ?>
+        </div>
+    <?php } ?>
+
+
   <div class="l-main">
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>

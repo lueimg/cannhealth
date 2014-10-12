@@ -183,6 +183,10 @@ body.front {
   display: inline-block;
   padding: 3px 5px;
 }
+.description_page {
+  margin: 0 auto;
+  width: 960px;
+}
 .faq-question a {
   text-decoration: none;
   list-style-type: disc;
@@ -470,22 +474,27 @@ h1 {
   background: #e62c2a;
   color: #fff;
   height: 75px;
-max-height
+  margin-bottom: 5px;
+}
+.navigation_text .l-region--navigation-text {
+  height: 100%;
 }
 .navigation_text .navigation {
   font-size: 1.3em;
-  line-height: 3.5em;
   margin: 0 auto;
   max-width: 960px;
   text-transform: uppercase;
   position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .navigation_text .navigation .sub-text {
-  left: 0;
   padding-left: 30px;
-  position: absolute;
   text-transform: none;
-  top: 24px;
   background: url("../images/check_register.png") no-repeat left center transparent;
 }
 .node--product.view-mode-full {
@@ -530,6 +539,7 @@ max-height
   content: "$";
   display: inline-block;
 }
+.node-type-page h1,
 .node-type-product h1 {
   display: none;
 }

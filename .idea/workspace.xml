@@ -23,21 +23,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cann_general.module" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="cann_general.module" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="31" selection-start="4264" selection-end="4283" vertical-scroll-proportion="0.4649266" vertical-offset="1650" max-vertical-offset="15180">
+            <state line="67" column="0" selection-start="1996" selection-end="1996" vertical-scroll-proportion="-10.291667" vertical-offset="668" max-vertical-offset="15285">
               <folding>
-                <marker date="1412547955000" expanded="true" signature="21150:21383" placeholder="..." />
-                <marker date="1412547955000" expanded="true" signature="21468:21569" placeholder="..." />
-                <marker date="1412547955000" expanded="true" signature="21493:21558" placeholder="..." />
-                <marker date="1412547955000" expanded="true" signature="21751:21898" placeholder="..." />
-                <marker date="1412547955000" expanded="true" signature="22079:22226" placeholder="..." />
-                <marker date="1412547955000" expanded="true" signature="25073:25277" placeholder="..." />
-                <marker date="1412547955000" expanded="true" signature="25086:25277" placeholder="..." />
-                <marker date="1412547955000" expanded="true" signature="26260:26456" placeholder="..." />
-                <marker date="1412547955000" expanded="true" signature="26303:26434" placeholder="..." />
+                <marker date="1413104250000" expanded="true" signature="21200:21433" placeholder="..." />
+                <marker date="1413104250000" expanded="true" signature="21518:21619" placeholder="..." />
+                <marker date="1413104250000" expanded="true" signature="21543:21608" placeholder="..." />
+                <marker date="1413104250000" expanded="true" signature="21801:21948" placeholder="..." />
+                <marker date="1413104250000" expanded="true" signature="22129:22276" placeholder="..." />
+                <marker date="1413104250000" expanded="true" signature="25123:25327" placeholder="..." />
+                <marker date="1413104250000" expanded="true" signature="25136:25327" placeholder="..." />
+                <marker date="1413104250000" expanded="true" signature="26310:26506" placeholder="..." />
+                <marker date="1413104250000" expanded="true" signature="26353:26484" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cannhealth.info" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/cannhealth.info">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="43" selection-start="836" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple.layout.inc" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/layouts/simple/simple.layout.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="43" selection-start="375" selection-end="375" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="435">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple-layout.tpl.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/layouts/simple/simple-layout.tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="36" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.85465115" vertical-offset="276" max-vertical-offset="1260">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="omega.info" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/omega.info">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="33" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,7 +90,7 @@
       <file leaf-file-name="cannhealth.behaviors.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="5" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1950">
+            <state line="19" column="5" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1950">
               <folding />
             </state>
           </provider>
@@ -54,7 +99,7 @@
       <file leaf-file-name="settings.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/default/settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="238" column="20" selection-start="8244" selection-end="8244" vertical-scroll-proportion="0.0" vertical-offset="3570" max-vertical-offset="8865">
+            <state line="238" column="20" selection-start="8244" selection-end="8244" vertical-scroll-proportion="31.25" vertical-offset="3570" max-vertical-offset="8115">
               <folding />
             </state>
           </provider>
@@ -76,11 +121,7 @@
         <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/templates/system/page.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/cannhealth/templates/page--front.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/cannhealth/css/cannhealth.styles.styl" />
-        <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/omega.info" />
         <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/css/layouts/simple/simple.layout.css" />
-        <option value="$PROJECT_DIR$/sites/all/themes/cannhealth/cannhealth.info" />
-        <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/layouts/simple/simple.layout.inc" />
-        <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/layouts/simple/simple-layout.tpl.php" />
         <option value="$PROJECT_DIR$/includes/menu.inc" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/sites/all/libraries/flexslider/jquery.flexslider.js" />
@@ -89,6 +130,10 @@
         <option value="$PROJECT_DIR$/sites/default/settings.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js" />
         <option value="$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module" />
+        <option value="$PROJECT_DIR$/sites/all/themes/cannhealth/cannhealth.info" />
+        <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/layouts/simple/simple.layout.inc" />
+        <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/omega.info" />
+        <option value="$PROJECT_DIR$/sites/all/themes/omega/omega/layouts/simple/simple-layout.tpl.php" />
       </list>
     </option>
   </component>
@@ -145,7 +190,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -213,26 +257,8 @@
               <option name="myItemId" value="all" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cannhealth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cannhealth" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -254,11 +280,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
+              <option name="myItemId" value="themes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="menu_token" />
+              <option name="myItemId" value="omega" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,12 +306,167 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omega" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omega" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cannhealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cannhealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omega" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omega" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cannhealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cannhealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omega" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omega" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cannhealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cannhealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cannhealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cannhealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cannhealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cannhealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="process" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cannhealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cannhealth" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,7 +496,9 @@
     </configuration>
     <configuration default="false" name="cann_general" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner directory="$PROJECT_DIR$/sites/all/modules/00custom" />
+      <RunnerSettings RunnerId="PhpRunner" />
       <RunnerSettings RunnerId="PhpUnitDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
       <ConfigurationWrapper RunnerId="PhpUnitDebugRunner" />
       <method />
     </configuration>
@@ -378,11 +561,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38636363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38636363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22455573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21405493" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22778675" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21405493" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4275568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -390,11 +573,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -412,20 +595,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="17" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_0.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1198" column="22" selection-start="34191" selection-end="34204" vertical-scroll-proportion="0.7941176" vertical-offset="17646" max-vertical-offset="20880" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/betterlogin/betterlogin.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="52" selection-start="2861" selection-end="2861" vertical-scroll-proportion="-2.5416667" vertical-offset="1244" max-vertical-offset="1665" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/betterlogin/templates/page--user--login.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.5833335" vertical-offset="134" max-vertical-offset="555" />
@@ -482,11 +655,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/afb/afb.install">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="0" selection-start="155" selection-end="155" vertical-scroll-proportion="0.2542373" vertical-offset="0" max-vertical-offset="975" />
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/afb/afb.module">
@@ -529,11 +702,6 @@
         <state line="2" column="1" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0729927" vertical-offset="0" max-vertical-offset="411" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/process/page.process.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="388" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/images/logo_home.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -544,39 +712,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="411" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/css/layouts/simple/simple.layout.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="142" column="0" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.8668639" vertical-offset="1544" max-vertical-offset="2220" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/omega.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="34" selection-start="670" selection-end="670" vertical-scroll-proportion="0.22624435" vertical-offset="0" max-vertical-offset="663" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/navigation404/README.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/layouts/simple/simple-layout.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="11" selection-start="2132" selection-end="2132" vertical-scroll-proportion="1.1069518" vertical-offset="486" max-vertical-offset="1140" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/cannhealth.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="26" selection-start="999" selection-end="1032" vertical-scroll-proportion="1.2857143" vertical-offset="0" max-vertical-offset="615" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/layouts/simple/simple.layout.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="573" selection-end="573" vertical-scroll-proportion="0.65891474" vertical-offset="0" max-vertical-offset="420" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/navigation404/navigation404.info">
@@ -629,18 +772,6 @@
         <state line="895" column="0" selection-start="32616" selection-end="32616" vertical-scroll-proportion="-4.9583335" vertical-offset="13261" max-vertical-offset="16590" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/bootstrap.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2267" column="0" selection-start="77779" selection-end="77779" vertical-scroll-proportion="-4.9583335" vertical-offset="33841" max-vertical-offset="52455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/common.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3988" column="35" selection-start="149831" selection-end="149831" vertical-scroll-proportion="0.32137287" vertical-offset="59524" max-vertical-offset="123525" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state line="133" column="53" selection-start="5479" selection-end="5479" vertical-scroll-proportion="0.6380091" vertical-offset="1572" max-vertical-offset="2235" />
@@ -651,18 +782,9 @@
         <state line="21" column="0" selection-start="529" selection-end="529" vertical-scroll-proportion="0.2760736" vertical-offset="0" max-vertical-offset="652" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/default/settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="238" column="20" selection-start="8244" selection-end="8244" vertical-scroll-proportion="0.0" vertical-offset="3570" max-vertical-offset="8865">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
+        <state line="6" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/js/cannhealth.behaviors.js">
@@ -674,25 +796,108 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/menu_token/menu_token.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="576" column="54" selection-start="19017" selection-end="19017" vertical-scroll-proportion="13.450705" vertical-offset="0" max-vertical-offset="8820">
+        <state line="576" column="54" selection-start="19017" selection-end="19017" vertical-scroll-proportion="13.450705" vertical-offset="0" max-vertical-offset="8820" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/bootstrap.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3341" column="10" selection-start="114836" selection-end="114836" vertical-scroll-proportion="-0.02973396" vertical-offset="50089" max-vertical-offset="52455">
+          <folding>
+            <marker date="1411363974000" expanded="true" signature="-1:-1" placeholder="SELECT filen..." />
+            <marker date="1411363974000" expanded="true" signature="-1:-1" placeholder="SELECT name,..." />
+            <marker date="1411363974000" expanded="true" signature="-1:-1" placeholder="SELECT 1 FRO..." />
+            <marker date="1411363974000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1411363974000" expanded="true" signature="-1:-1" placeholder="SELECT filen..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/common.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2961" column="20" selection-start="106797" selection-end="106797" vertical-scroll-proportion="59.524258" vertical-offset="6289" max-vertical-offset="123525">
+          <folding>
+            <marker date="1411363974000" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/preprocess/page.preprocess.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="676">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/process/page.process.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="652">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="31" selection-start="4264" selection-end="4283" vertical-scroll-proportion="0.4649266" vertical-offset="1650" max-vertical-offset="15180">
+        <state line="67" column="0" selection-start="1996" selection-end="1996" vertical-scroll-proportion="-10.291667" vertical-offset="668" max-vertical-offset="15285">
           <folding>
-            <marker date="1412547955000" expanded="true" signature="21150:21383" placeholder="..." />
-            <marker date="1412547955000" expanded="true" signature="21468:21569" placeholder="..." />
-            <marker date="1412547955000" expanded="true" signature="21493:21558" placeholder="..." />
-            <marker date="1412547955000" expanded="true" signature="21751:21898" placeholder="..." />
-            <marker date="1412547955000" expanded="true" signature="22079:22226" placeholder="..." />
-            <marker date="1412547955000" expanded="true" signature="25073:25277" placeholder="..." />
-            <marker date="1412547955000" expanded="true" signature="25086:25277" placeholder="..." />
-            <marker date="1412547955000" expanded="true" signature="26260:26456" placeholder="..." />
-            <marker date="1412547955000" expanded="true" signature="26303:26434" placeholder="..." />
+            <marker date="1413104250000" expanded="true" signature="21200:21433" placeholder="..." />
+            <marker date="1413104250000" expanded="true" signature="21518:21619" placeholder="..." />
+            <marker date="1413104250000" expanded="true" signature="21543:21608" placeholder="..." />
+            <marker date="1413104250000" expanded="true" signature="21801:21948" placeholder="..." />
+            <marker date="1413104250000" expanded="true" signature="22129:22276" placeholder="..." />
+            <marker date="1413104250000" expanded="true" signature="25123:25327" placeholder="..." />
+            <marker date="1413104250000" expanded="true" signature="25136:25327" placeholder="..." />
+            <marker date="1413104250000" expanded="true" signature="26310:26506" placeholder="..." />
+            <marker date="1413104250000" expanded="true" signature="26353:26484" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/cannhealth/cannhealth.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="43" selection-start="836" selection-end="880" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/omega.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="33" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/default/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="238" column="20" selection-start="8244" selection-end="8244" vertical-scroll-proportion="31.25" vertical-offset="3570" max-vertical-offset="8115">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/layouts/simple/simple.layout.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="43" selection-start="375" selection-end="375" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/layouts/simple/simple-layout.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="36" selection-start="1356" selection-end="1356" vertical-scroll-proportion="0.85465115" vertical-offset="276" max-vertical-offset="1260">
+          <folding />
         </state>
       </provider>
     </entry>

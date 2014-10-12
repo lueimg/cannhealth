@@ -9,6 +9,7 @@ regions[branding]       = Branding
 regions[header]         = Header
 regions[navigation]     = Navigation
 regions[navigation_text]= Navigation text
+regions[description_page]= Description page
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content

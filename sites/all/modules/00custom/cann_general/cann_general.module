@@ -63,6 +63,13 @@ $url = $_GET['q'];
 
 }
 
+function cann_general_process_page(&$var)
+{
+
+
+
+}
+
 
 function cann_general_menu(){
 
