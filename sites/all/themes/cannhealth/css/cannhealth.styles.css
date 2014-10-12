@@ -272,10 +272,10 @@ body.front {
 #edit-field-max-gram-per-month {
   display: none;
 }
-.footer-wrap {
+.not-front .footer-wrap {
   background: #4e4e4e;
 }
-.footer-wrap .block__title {
+.not-front .footer-wrap .block__title {
   text-transform: uppercase;
   font-weight: normal;
   padding: 10px 30px;
@@ -283,30 +283,30 @@ body.front {
   margin-bottom: 0;
   color: #fff;
 }
-.footer-wrap .l-footer {
+.not-front .footer-wrap .l-footer {
   padding-bottom: 25px;
   margin-bottom: 0;
 }
-.footer-wrap .l-footer .block {
+.not-front .footer-wrap .l-footer .block {
   display: inline-block;
   vertical-align: top;
   width: 172px;
   margin: 0 30px;
 }
-.footer-wrap .l-footer .block a {
+.not-front .footer-wrap .l-footer .block a {
   color: #fff;
 }
-.footer-wrap .l-footer .block p {
+.not-front .footer-wrap .l-footer .block p {
   margin: 0;
 }
-.footer-wrap #block-superfish-1--2 li {
+.not-front .footer-wrap #block-superfish-1--2 li {
   display: block;
   border: none;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-.footer-wrap #block-superfish-1--2 li a {
+.not-front .footer-wrap #block-superfish-1--2 li a {
   border-bottom: 1px dotted #ccc;
   padding: 5px 15px;
   color: #b5b5b5;

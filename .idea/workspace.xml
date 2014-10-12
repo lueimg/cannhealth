@@ -26,7 +26,7 @@
       <file leaf-file-name="cann_general.module" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="913" column="31" selection-start="24769" selection-end="24769" vertical-scroll-proportion="0.33278957" vertical-offset="13401" max-vertical-offset="15465">
+            <state line="913" column="31" selection-start="24769" selection-end="24769" vertical-scroll-proportion="0.5982405" vertical-offset="13401" max-vertical-offset="15465">
               <folding>
                 <marker date="1413115786000" expanded="true" signature="21249:21482" placeholder="..." />
                 <marker date="1413115786000" expanded="true" signature="21567:21668" placeholder="..." />
@@ -351,10 +351,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38636363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38636363" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22778675" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -681,7 +681,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/00custom/cann_general/cann_general.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="913" column="31" selection-start="24769" selection-end="24769" vertical-scroll-proportion="0.33278957" vertical-offset="13401" max-vertical-offset="15465">
+        <state line="913" column="31" selection-start="24769" selection-end="24769" vertical-scroll-proportion="0.5982405" vertical-offset="13401" max-vertical-offset="15465">
           <folding>
             <marker date="1413115786000" expanded="true" signature="21249:21482" placeholder="..." />
             <marker date="1413115786000" expanded="true" signature="21567:21668" placeholder="..." />
