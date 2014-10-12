@@ -11,10 +11,12 @@
   text-align: left;
   margin-right: 50px;
   vertical-align: top;
+  line-height: 1.5em;
 }
 .block-home .block__title {
-  color: #148e24;
-  font-size: 1.6em;
+  color: #528d32;
+  font-size: 20px;
+  font-weight: normal;
   text-transform: uppercase;
 }
 .block-home.products h2 {
@@ -35,7 +37,7 @@
   color: #518c30;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
 }
 .block-home.products .views-row .views-field-field-thc-level span,
 .block-home.products .views-row .views-field-field-cbd-level span,
@@ -46,12 +48,13 @@
 .block-home.products .views-row .views-field-view-node a {
   padding: 10px;
   display: inline-block;
-  background: #148e24;
+  background: #528d32;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
   margin: 10px;
   font-size: 0.8em;
+  padding: 7px 12px;
 }
 .flexslider {
   -webkit-box-shadow: none;
@@ -70,9 +73,10 @@
 }
 .flexslider .flex-control-nav li a {
   background: #fff;
+  border: 1px solid #000;
 }
 .flexslider .flex-control-nav li .flex-active {
-  background: #148e24;
+  background: #528d32;
 }
 .footer-wrap .block-footer.panel .menu,
 .footer-wrap .block-footer.support .menu {
@@ -88,18 +92,24 @@
   text-decoration: none;
   color: #b5b5b5 !important;
 }
+.footer-wrap .block-footer.logo {
+  height: 100%;
+}
+.footer-wrap .block-footer.logo p {
+  margin-top: 20px !important;
+}
 body {
   font-size: 14px;
   font-family: 'liberation';
   color: #888;
 }
 body.front {
-  background: url("../images/background.jpg") repeat center center #148e24;
+  background: url("../images/background.jpg") repeat center center #528d32;
 }
 .cann-general-page-distributor-register-form label,
 .cann-general-page-client-register-form label {
   font-weight: normal;
-  color: #5c5c5c;
+  color: #555;
 }
 .cann-general-page-distributor-register-form input,
 .cann-general-page-client-register-form input {
@@ -121,7 +131,7 @@ body.front {
   margin: 10px auto;
   position: relative;
   left: 23%;
-  background: url("../images/check_register.png") no-repeat 10px center #148e24;
+  background: url("../images/check_register.png") no-repeat 10px center #528d32;
 }
 .cann-general-page-distributor-register-form {
   width: 90%;
@@ -159,7 +169,7 @@ body.front {
   color: #e62c2a;
 }
 .checkout-top .link a {
-  color: #148e24;
+  color: #528d32;
   text-decoration: none;
 }
 .buy.sidebar {
@@ -187,21 +197,38 @@ body.front {
   margin: 0 auto;
   width: 960px;
 }
-.faq-question a {
+.faq-question-answer .faq-question a {
   text-decoration: none;
   list-style-type: disc;
-  display: list-item;
-  text-transform: none;
+  display: inline-block;
+  text-transform: capitalize;
   color: #111;
+  background: #f5f5f5;
+  padding: 0 15px;
+  line-height: 2em;
+  border: 1px solid #ccc;
+  width: 100%;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
 }
-.faq-question a:hover {
+.faq-question-answer .faq-question a:hover {
   text-decoration: underline;
 }
-.faq-answer .remove a,
+.faq-question-answer .faq-answer {
+  padding-left: 20px;
+}
+.faq-question-answer .faq-answer .field--name-body {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-top: none;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+.faq-question-answer .faq-answer p {
+  margin: 0;
+}
 .field--name-compra .remove a,
-.faq-answer .go-checkout a,
 .field--name-compra .go-checkout a,
-.faq-answer .libre a,
 .field--name-compra .libre a {
   display: inline-block;
   background: #e62c2a;
@@ -209,13 +236,11 @@ body.front {
   padding: 8px 10px;
   text-decoration: none;
 }
-.faq-answer .go-checkout a,
 .field--name-compra .go-checkout a {
-  background: #148e24;
+  background: #528d32;
   vertical-align: bottom;
   padding: 11px;
 }
-.faq-answer .continue a,
 .field--name-compra .continue a {
   float: right;
   color: #e62c2a;
@@ -236,13 +261,13 @@ body.front {
   margin: 0;
 }
 .footer_pre .l-region a {
-  background: #148e24;
+  background: #528d32;
   float: right;
   text-transform: uppercase;
   padding: 8px 20px 8px 50px;
   color: #fff;
   text-decoration: none;
-  background: url("../images/icon_register.png") no-repeat 17px center #148e24;
+  background: url("../images/icon_register.png") no-repeat 17px center #528d32;
 }
 #edit-field-max-gram-per-month {
   display: none;
@@ -258,6 +283,10 @@ body.front {
   margin-bottom: 0;
   color: #fff;
 }
+.footer-wrap .l-footer {
+  padding-bottom: 25px;
+  margin-bottom: 0;
+}
 .footer-wrap .l-footer .block {
   display: inline-block;
   vertical-align: top;
@@ -266,6 +295,9 @@ body.front {
 }
 .footer-wrap .l-footer .block a {
   color: #fff;
+}
+.footer-wrap .l-footer .block p {
+  margin: 0;
 }
 .footer-wrap #block-superfish-1--2 li {
   display: block;
@@ -278,6 +310,8 @@ body.front {
   border-bottom: 1px dotted #ccc;
   padding: 5px 15px;
   color: #b5b5b5;
+  font-size: 14px;
+  text-transform: none;
 }
 .forgot-pass {
   float: right;
@@ -322,7 +356,7 @@ body.front {
   font-size: 1em;
 }
 .front .user-types .type a:hover {
-  background: #148e24;
+  background: #528d32;
 }
 .front .user-types .type.last {
   background-image: url("../images/icon_home2.png");
@@ -388,9 +422,9 @@ h1 {
 }
 .l-main .l-region--sidebar-first .panel li.first.last ul li a {
   display: block;
-  color: #148e24;
+  color: #528d32;
   text-decoration: none;
-  border-bottom: 1px dotted #148e24;
+  border-bottom: 1px dotted #528d32;
   padding: 5px 15px;
 }
 .l-main .l-region--sidebar-first .panel li.first.last ul li a:hover,
@@ -451,7 +485,7 @@ h1 {
   clear: both;
 }
 .m-menu li {
-  font-size: 1.05em;
+  font-size: 13px;
   text-transform: uppercase;
   padding: 0 10px;
   margin: 25px 0;
@@ -493,9 +527,11 @@ h1 {
   transform: translateY(-50%);
 }
 .navigation_text .navigation .sub-text {
-  padding-left: 30px;
+  padding-left: 20px;
+  font-size: 14px;
+  margin-top: 7px;
   text-transform: none;
-  background: url("../images/check_register.png") no-repeat left center transparent;
+  background: url("../images/check_register.png") no-repeat left center/15px transparent;
 }
 .node--product.view-mode-full {
   margin-top: 40px;
@@ -530,7 +566,7 @@ h1 {
   font-weight: bold;
 }
 .node--product.view-mode-full .field--name-field-price .field__item {
-  color: #148e24;
+  color: #528d32;
   font-weight: bold;
   font-size: 2em;
   margin: 10px 0;
@@ -548,11 +584,16 @@ h1 {
 }
 .page-distributor-register h1 {
   color: #528d32;
+  font-size: 24px;
+}
+.page-user h1 {
+  font-size: 24px;
 }
 .product-filter .block__title {
   color: #e62c2a;
   text-transform: uppercase;
   font-size: 13px;
+  font-weight: normal;
 }
 .product-filter .views-exposed-widget {
   width: 268px;
@@ -567,7 +608,7 @@ h1 {
   border-radius: 7px;
 }
 .product-filter .views-exposed-widget #edit-submit-products {
-  background: #148e24;
+  background: #528d32;
   color: #fff;
   text-transform: uppercase;
   padding: 10px;
@@ -768,7 +809,7 @@ h1 {
 }
 .sub-home h1 {
   color: #518c30;
-  font-size: 3.7em;
+  font-size: 43px;
   text-align: center;
   margin-bottom: 10px;
   font-weight: normal;
@@ -800,7 +841,7 @@ h1 {
   color: #999;
 }
 .t-checkout .descript .producer {
-  color: #148e24;
+  color: #528d32;
 }
 .t-checkout .grams input {
   width: 50px;
@@ -826,6 +867,12 @@ h1 {
   float: right;
   margin: 50px;
 }
+.text-green {
+  color: #528d32;
+}
+.text-red {
+  color: #e62c2a;
+}
 .user-login .form-text {
   padding: 10px;
   border: 1px solid #f29594;
@@ -841,7 +888,7 @@ h1 {
   font-weight: normal;
 }
 .user-login #edit-submit {
-  background: url("../images/icon_login.png") no-repeat 15px center #148e24;
+  background: url("../images/icon_login.png") no-repeat 15px center #528d32;
   padding: 5px 20px 5px 40px;
   border: none;
   color: #fff;
@@ -864,7 +911,7 @@ h1 {
   color: #e62c2a;
 }
 .user_name .name {
-  color: #148e24;
+  color: #528d32;
   padding: 0px 10px;
   display: inline-block;
 }
@@ -887,6 +934,7 @@ h1 {
 }
 .welcome-text {
   text-align: center;
+  font-size: 18px;
 }
 .welcome-text a {
   padding: 10px;

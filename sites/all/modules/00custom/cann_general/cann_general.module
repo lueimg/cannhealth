@@ -113,7 +113,7 @@ function cann_general_menu(){
 
     //producers home page
     $items['distributor'] = array(
-        'title' => 'Licenced Distributors',
+        'title' => 'Licensed Producers / Licensed Distributors',
         'page callback' => 'cann_general_page_home',
         'access callback' => 'cann_general_page_home_distributor_access',
         'type' => MENU_CALLBACK,
@@ -414,8 +414,8 @@ function cann_general_page_distributor_register_form_submit($form, &$form_state)
 
 
     //Redireccion
-    drupal_goto("home");
-    drupal_set_message("Thank you for registering");
+    drupal_goto("successfull-registration");
+//    drupal_set_message("Thank you for registering");
 }
 
 
@@ -704,8 +704,8 @@ function cann_general_page_client_register_form_submit($form, &$form_state) {
     //NOTIFICATION TO ADMINISTRATORS
     //NOTIFICATION TO CLIENT.
     $deb = 1;
-    drupal_goto($_SESSION['user_type']);
-    drupal_set_message("Thank you for registering");
+    drupal_goto("successfull-registration");
+//    drupal_set_message("Thank you for registering");
 }
 
 
@@ -870,11 +870,14 @@ function cann_general_block_user_type_home_content()
 function cann_general_block_user_navigation_content()
 {
     //POR DEFECTO MUESTRA EL TITULO
-    $info = "<div class='listo text'>" . drupal_get_title() . "</div>";
+    $info = "<div class='liston text'>" . drupal_get_title() . "</div>";
 
     //PERSONALIZACION POR URL
     $url = $_GET['q'];
-//    dpm($url);
+    $arg0 = arg(0);
+    $arg1 = arg(1);
+    $arg2 = arg(2);
+    $deb = 1;
     if($url == 'user')
     {
         $info = 'Log In';
@@ -884,6 +887,15 @@ function cann_general_block_user_navigation_content()
     }elseif($url=='checkout')
     {
         $info = "Checkout";
+    }elseif($arg0 == 'node' && is_numeric($arg1) && is_null($arg2))
+    {
+        $rs = db_query("select * from node where nid=".$arg1);
+        $record = $rs->fetchObject();
+        if($record->type == "product")
+        {
+            $info = "<div class='liston text'>" . drupal_get_title() . "</div>";
+
+        }
     }
 
 
@@ -899,7 +911,7 @@ function cann_general_preprocess_page(&$vars)
 
     if(!$vars['logged_in'] &&  $url == 'user' )
     {
-        drupal_set_title("Login or <a class='link-register' href='/register'>Register</a>",PASS_THROUGH);
+        drupal_set_title("LOGIN or <a class='link-register' href='/register'>Register</a>",PASS_THROUGH);
     }
 
 }
