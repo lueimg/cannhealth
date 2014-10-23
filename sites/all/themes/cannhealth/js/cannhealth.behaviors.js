@@ -97,6 +97,9 @@
 
         jQuery(".page-client-register h1").prependTo(jQuery("#cann-general-page-client-register-form"))
 
+        jQuery('.go-to-my-panel').click(function(){
+           window.location = "panel"
+        });
 
 
       $('.some-selector', context).once('foo', function () {

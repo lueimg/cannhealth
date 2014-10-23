@@ -129,7 +129,7 @@ function cann_general_menu(){
     $items['panel'] = array(
         'title' => 'My Panel Manager',
         'page callback' => 'cann_general_page_panel_manager',
-        'access arguments' => array('administer my panel manager'),
+        'access arguments' => array('access content'),
         'type' => MENU_CALLBACK,
     );
 
@@ -499,6 +499,15 @@ function cann_general_user_logout($account)
 
 function cann_general_page_panel_manager()
 {
+
+    global $user;
+    $deb= 1 ;
+    if(!$user->uid){
+        $options = array('query' => drupal_get_destination());
+        drupal_goto('user', $options);
+    }
+
+
     return "";
 
 }
@@ -893,7 +902,9 @@ function cann_general_block_user_navigation_content()
         $record = $rs->fetchObject();
         if($record->type == "product")
         {
-            $info = "<div class='liston text'>" . drupal_get_title() . "</div>";
+            $info = "<div class='liston text'> PRODUCTS <span class='min-text'>/ " . drupal_get_title() . "</span> </div>";
+            $info .= "<div class='liston sub-text'>Online ordering will be available within Canada for registered Client</div>";
+
 
         }
     }

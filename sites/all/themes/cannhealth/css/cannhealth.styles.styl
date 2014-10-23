@@ -237,11 +237,12 @@ body
 			text-decoration none
 
 .buy.sidebar
-	background url(../images/icons-shoppingcart2.png) no-repeat 40px center #F1F1F1
-	width 268px
+	background url(../images/ico-shopping.png) no-repeat 40px center #F1F1F1
+	width 255px
 	color #111
 	padding 30px 40px 25px 100px
 	margin-top 35px
+	margin-bottom 23px
 	.nitems
 	.link
 		text-align right
@@ -415,6 +416,23 @@ body
 				background-image url('../images/icon_home2.png')
 
 
+.go-to-my-panel
+	background #DFDFDF
+	padding: 20px 30px;
+	width: 255px;
+	cursor pointer
+	.l-left
+		display inline-block
+	.l-right
+		color: #000000;
+		display: inline-block;
+		float: right;
+		font-weight: bold;
+		padding-left: 20px;
+		width: 60%;
+
+
+
 h1
 	color #528d32
 
@@ -549,11 +567,18 @@ h1
 			text-decoration none
 			&:hover
 				color color_red
+			&.active
+				color color_green
 
 
 #menu-390-1
 	a
 		color color_red
+
+.min-text
+	color #dce911
+	font-size: 12px;
+	text-transform none
 
 //liston de color rojo o verde
 .navigation_text
@@ -624,6 +649,8 @@ h1
 
 
 .not-front
+	.l-main
+		margin-bottom 100px
 	.tabs--primary
 		display none
 
@@ -655,7 +682,7 @@ h1
 			background color_green
 			color #fff
 			text-transform uppercase
-			padding 10px
+			padding 8px 20px
 			float right
 			border none
 			font-size: 11px
@@ -902,8 +929,11 @@ h1
 
 .text-green
 	color color_green
+	text-decoration none
 .text-red
 	color color_red
+	text-decoration none
+
 
 
 .user-login
