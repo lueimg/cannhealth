@@ -19,6 +19,9 @@
   font-weight: normal;
   text-transform: uppercase;
 }
+.block-home.products {
+  margin-top: 50px;
+}
 .block-home.products h2 {
   text-align: left;
 }
@@ -78,19 +81,49 @@
 .flexslider .flex-control-nav li .flex-active {
   background: #528d32;
 }
+.footer-wrap .block-footer.panel,
+.footer-wrap .block-footer.support {
+  color: #b5b5b5;
+}
+.footer-wrap .block-footer.panel p,
+.footer-wrap .block-footer.support p {
+  margin-top: 10px;
+}
+.footer-wrap .block-footer.panel .call,
+.footer-wrap .block-footer.support .call {
+  font-size: 1.5em;
+  padding: 8px 0;
+}
+.footer-wrap .block-footer.panel .mail a,
+.footer-wrap .block-footer.support .mail a {
+  text-decoration: none;
+  color: #b5b5b5 !important;
+}
+.footer-wrap .block-footer.panel .link,
+.footer-wrap .block-footer.support .link {
+  text-transform: uppercase;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #b5b5b5;
+  display: inline-block;
+  padding: 5px 20px;
+  font-family: sans-serif;
+  margin: 15px 0;
+  font-size: 1.3em;
+}
 .footer-wrap .block-footer.panel .menu,
 .footer-wrap .block-footer.support .menu {
   padding: 0 0 0 10px;
   margin: 0;
 }
-.footer-wrap .block-footer.panel a,
-.footer-wrap .block-footer.support a {
+.footer-wrap .block-footer.menu .menu a {
   border-bottom: 1px dotted #ccc;
-  padding: 5px 15px;
-  display: inline-block;
-  width: 100%;
-  text-decoration: none;
   color: #b5b5b5 !important;
+  display: block;
+  font-size: 14px;
+  padding: 5px 15px;
+  text-decoration: none;
+  text-transform: none;
 }
 .footer-wrap .block-footer.logo {
   height: 100%;
@@ -294,6 +327,9 @@ body.front {
   width: 172px;
   margin: 0 30px;
 }
+.not-front .footer-wrap .l-footer .block li {
+  list-style: none;
+}
 .not-front .footer-wrap .l-footer .block a {
   color: #fff;
 }
@@ -306,6 +342,10 @@ body.front {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+.not-front .footer-wrap #block-superfish-1--2 li#menu-443-1,
+.not-front .footer-wrap #block-superfish-1--2 li#menu-390-1 {
+  display: none;
 }
 .not-front .footer-wrap #block-superfish-1--2 li a {
   border-bottom: 1px dotted #ccc;
@@ -606,7 +646,7 @@ h1 {
   display: none;
 }
 .not-front .l-main {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 .not-front .tabs--primary {
   display: none;
@@ -838,7 +878,7 @@ h1 {
 }
 .sub-home h1 {
   color: #518c30;
-  font-size: 43px;
+  font-size: 48px;
   text-align: center;
   margin-bottom: 10px;
   font-weight: normal;
@@ -968,10 +1008,13 @@ h1 {
   font-size: 18px;
 }
 .welcome-text a {
-  padding: 10px;
+  padding: 9px 26px 5px;
   display: inline-block;
   background: #e62c2a;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
+  font-family: helvetica;
+  font-weight: 200;
+  font-size: 0.8em;
 }

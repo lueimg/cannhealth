@@ -94,6 +94,7 @@ width_total = 960px
 		font-weight: normal
 		text-transform uppercase
 	&.products
+		margin-top 50px
 		h2
 			text-align left
 		.views-row
@@ -152,16 +153,38 @@ width_total = 960px
 	.block-footer
 		&.panel
 		&.support
+			color #b5b5b5
+			p
+				margin-top 10px
+			.call
+				font-size: 1.5em;
+				padding 8px 0
+			.mail
+				a
+					text-decoration none
+					color #b5b5b5 !important
+			.link
+				text-transform uppercase
+				border-radius 5px
+				border 1px solid #b5b5b5
+				display inline-block
+				padding 5px 20px
+				font-family: sans-serif;
+				margin 15px 0
+				font-size: 1.3em;
 			.menu
 				padding 0 0 0 10px
 				margin 0
-			a
-				border-bottom 1px dotted #ccc
-				padding 5px 15px
-				display inline-block
-				width 100%
-				text-decoration none
-				color #b5b5b5 !important
+		&.menu
+			.menu
+				a
+					border-bottom: 1px dotted #cccccc;
+					color: #b5b5b5 !important;
+					display: block;
+					font-size: 14px;
+					padding: 5px 15px;
+					text-decoration: none;
+					text-transform: none;
 		&.logo
 			height 100%
 			p
@@ -354,6 +377,8 @@ body
 				vertical-align top
 				width 172px
 				margin 0 30px
+				li
+					list-style none
 				a
 					color #fff
 				p
@@ -365,6 +390,9 @@ body
 				width 100%
 				margin 0
 				padding 0
+				&#menu-443-1
+				&#menu-390-1
+					display none
 				a
 					border-bottom 1px dotted #ccc
 					padding 5px 15px
@@ -650,7 +678,7 @@ h1
 
 .not-front
 	.l-main
-		margin-bottom 100px
+		margin-bottom 70px
 	.tabs--primary
 		display none
 
@@ -875,7 +903,7 @@ h1
 .sub-home
 	h1
 		color color_title_green
-		font-size: 43px
+		font-size: 48px
 		text-align center
 		margin-bottom 10px
 		font-weight: normal
@@ -995,12 +1023,15 @@ h1
 	text-align center
 	font-size: 18px
 	a
-		padding 10px
+		padding 9px 26px 5px
 		display inline-block
 		background color_red
 		text-transform uppercase
 		color #fff
 		text-decoration none
+		font-family helvetica
+		font-weight: 200;
+		font-size: 0.8em;
 
 
 
